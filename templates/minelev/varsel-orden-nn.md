@@ -21,7 +21,7 @@ info:
  - {{this.nb}}
 {{/each}}
 
-Varselet gjeld {{ content.period.nb }} skoleåret {{ content.year }}.
+Varselet gjeld {{ lowercase content.period.nb }} skoleåret {{ content.year }}.
 
 Vi varslar deg nå, slik at du har moglegheit til å betre situasjonen.
 

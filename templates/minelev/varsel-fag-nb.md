@@ -27,7 +27,7 @@ Dette omfatter følgende fag:
  - {{this.nb}}
 {{/each}}
 
-Varselet gjelder {{ content.period.nb }} skoleåret {{ content.year }}.
+Varselet gjelder {{ lowercase content.period.nb }} skoleåret {{ content.year }}.
 
 ## Viktig om fravær
 

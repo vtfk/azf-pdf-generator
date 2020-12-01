@@ -27,7 +27,7 @@ Dette omfattar følgjande fag:
  - {{this.nn}}
 {{/each}}
 
-Varselet gjeld {{ content.period.nn }} skoleåret {{ content.year }}.
+Varselet gjeld {{ lowercase content.period.nn }} skoleåret {{ content.year }}.
 
 ## Viktig om fråvær
 
