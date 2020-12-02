@@ -12,13 +12,17 @@ Mikrotjeneste som genererer PDF-dokumenter basert på predefinerte maler og retu
 
 Se [tilgjengelige systemer og maler](#maler) i listen nedenfor.
 
+Feltet `language` er standard satt til `nb` (bokmål) om ikke annet er definert. <br>
+Andre tillatte verdier er `nn` (nynorsk) og `en` (engelsk)
+
+Forespørsel:
+
 ```json
 {
   "system": "minelev",
   "template": "varsel-fag",
   "language": "nb",
   "data": {
-    "preview": true,
     ... template fields ...
   }
 }
@@ -33,7 +37,6 @@ Respons:
     "template": "varsel-fag",
     "language": "nb",
     "data": {
-      "preview": true,
       ... template fields ...
     },
     "base64": "...base64-pdf..."
