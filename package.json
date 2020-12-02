@@ -3,15 +3,18 @@
   "version": "0.1.0",
   "description": "",
   "scripts": {
-    "test": "standard",
-    "standard:fix": "standard --fix",
+    "test": "npm run test:jest && npm run test:lint",
+    "test:jest": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:lint": "standard",
     "refresh": "rm -rf node_modules && rm package-lock.json && npm i"
   },
   "author": "",
   "dependencies": {
-    "@alheimsins/pdf-make": "1.0.9",
-    "@vtfk/document-definitions": "file:../document-definitions",
     "@vtfk/logger": "2.4.0",
+    "@vtfk/document-definitions": "file:../document-definitions",
+    "@alheimsins/pdf-make": "1.0.9",
     "ajv": "6.12.6",
     "handlebars": "4.7.6",
     "html-to-pdfmake": "2.1.2",
@@ -22,7 +25,17 @@
     "yaml-front-matter": "4.1.0"
   },
   "devDependencies": {
-    "axios": "0.21.0",
-    "standard": "16.0.3"
+    "standard": "16.0.3",
+    "jest": "26.6.3",
+    "@types/jest": "26.0.16"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "env": {
+    "node": true,
+    "jest": true
   }
 }
