@@ -13,7 +13,7 @@
   "author": "",
   "dependencies": {
     "@vtfk/logger": "2.4.0",
-    "@vtfk/document-definitions": "file:../document-definitions",
+    "@vtfk/document-definitions": "1.0.1",
     "@alheimsins/pdf-make": "1.0.9",
     "ajv": "6.12.6",
     "handlebars": "4.7.6",
