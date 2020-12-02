@@ -47,9 +47,9 @@ Et system kan ha mange maler, her er en beskrivelse av alle de forskjellige doku
 
 | System  | Template   | Languages  | Description  |
 |---------|------------|------------|--------------|
-| minelev | varsel-fag | nb, nn     | `data` skal være dokumentet fra MinElev documents. [Format tilgjengelig her.](https://github.com/vtfk/minelev-api/blob/main/docs/postDocument.md#fag) |
-| minelev | varsel-orden | nb, nn   | `data` skal være dokumentet fra MinElev documents. [Format tilgjengelig her.](https://github.com/vtfk/minelev-api/blob/main/docs/postDocument.md#orden) |
-| minelev | varsel-atferd | nb, nn  | `data` skal være dokumentet fra MinElev documents. [Format tilgjengelig her.](https://github.com/vtfk/minelev-api/blob/main/docs/postDocument.md#atferd) |
+| minelev | varsel-fag | nb, nn     | `data` skal være dokumentet fra MinElev documents. <br>[Format tilgjengelig her.](https://github.com/vtfk/minelev-api/blob/main/docs/postDocument.md#fag) |
+| minelev | varsel-orden | nb, nn   | `data` skal være dokumentet fra MinElev documents. <br>[Format tilgjengelig her.](https://github.com/vtfk/minelev-api/blob/main/docs/postDocument.md#orden) |
+| minelev | varsel-atferd | nb, nn  | `data` skal være dokumentet fra MinElev documents. <br>[Format tilgjengelig her.](https://github.com/vtfk/minelev-api/blob/main/docs/postDocument.md#atferd) |
 
 ## Utvikling
 
