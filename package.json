@@ -12,9 +12,9 @@
   },
   "author": "",
   "dependencies": {
-    "@vtfk/logger": "2.4.0",
-    "@vtfk/document-definitions": "1.0.1",
     "@alheimsins/pdf-make": "1.0.9",
+    "@vtfk/document-definitions": "1.0.2",
+    "@vtfk/logger": "2.4.0",
     "ajv": "6.12.6",
     "handlebars": "4.7.6",
     "html-to-pdfmake": "2.1.2",
