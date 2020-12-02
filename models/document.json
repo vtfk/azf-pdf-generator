@@ -21,7 +21,6 @@
       "type": "string",
       "title": "System",
       "description": "Systemet som \"eier\" malen",
-      "default": "",
       "examples": [
         "minelev"
       ]
@@ -31,7 +30,6 @@
       "type": "string",
       "title": "Template",
       "description": "Malnavn",
-      "default": "",
       "examples": [
         "varsel-fag"
       ]
