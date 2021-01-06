@@ -12,7 +12,7 @@
   },
   "author": "",
   "dependencies": {
-    "@alheimsins/pdf-make": "1.0.9",
+    "@alheimsins/pdf-make": "1.0.10",
     "@vtfk/document-definitions": "1.0.2",
     "@vtfk/logger": "2.4.0",
     "ajv": "6.12.6",
