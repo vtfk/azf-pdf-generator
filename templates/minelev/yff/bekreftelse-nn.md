@@ -15,7 +15,7 @@ info:
 
 # Stadfesting om elevutplassering
 
-Kopi senft via e-post til { kopiPåEpost }
+Kopi sendt via e-post til { kopiPåEpost }
 
 **Meld frå til skulen så raskt som mogleg dersom opplysningane i brevet ikkje stemmer.**
 
