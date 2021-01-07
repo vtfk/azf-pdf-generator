@@ -1,6 +1,6 @@
 {
   "system": "minelev",
-  "template": "varsel-fag",
+  "template": "varsel/fag",
   "language": "nb",
   "data": {
     "preview": true,

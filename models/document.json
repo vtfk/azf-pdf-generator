@@ -31,7 +31,7 @@
       "title": "Template",
       "description": "Malnavn",
       "examples": [
-        "varsel-fag"
+        "varsel/fag"
       ]
     },
     "language": {
