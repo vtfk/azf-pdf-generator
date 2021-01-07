@@ -12,7 +12,7 @@ const getValidationInnerError = (data, schema) => {
 
 const validSchema = {
   system: 'minelev',
-  template: 'varsel-fag'
+  template: 'varsel/fag'
 }
 
 describe('Validate document schema', () => {

@@ -12,12 +12,12 @@ describe('Get template', () => {
   })
 
   it('fallbacks to \'nb\' when template for language isn\'t found', async () => {
-    await expect(getTemplate({ system: 'minelev', template: 'varsel-fag', language: 'en' })).resolves
+    await expect(getTemplate({ system: 'minelev', template: 'varsel/fag', language: 'en' })).resolves
       .toContain('language: nb')
   })
 
   it('returns template', async () => {
-    await expect(getTemplate({ system: 'minelev', template: 'varsel-fag' })).resolves
+    await expect(getTemplate({ system: 'minelev', template: 'varsel/fag' })).resolves
       .toContain('---\ndefinition: brevmal\nlanguage: nb')
   })
 })
