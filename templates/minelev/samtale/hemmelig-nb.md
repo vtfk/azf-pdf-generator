@@ -15,7 +15,7 @@ Det er i dag produsert et brev i MinElev til {{ student.name }} i klasse {{ stud
 
 Eleven har hemmelig adresse, og har derfor ikke fått sitt brev i sin digitale postkasse.
 
-Administrasjonen på {{ school.name }} må sørge for å skrive ut brevet som bekrefter at eleven har takket nei til elevsamtale fra 360. Brevet har tittel «Tilbud om elevsamtale» i 360. Deretter skal brevet gis til {{ teacher.name }}. Det er {{ teacher.name }} som da er ansvarlig å distribuere brevet videre til eleven.
+Administrasjonen på {{ school.name }} må sørge for å skrive ut brevet som bekrefter at eleven har takket nei til elevsamtale fra 360. Brevet har tittel «Tilbud om elevsamtale» i 360. Deretter skal brevet gis til {{ teacher.name }}. Det er {{ teacher.name }} som da er ansvarlig for å distribuere brevet videre til eleven.
 
 Hvis eleven ikke er registrert med hemmelig adresse i 360, skal brukerstøtte arkiv informeres på telefon 35 91 70 13.
 
