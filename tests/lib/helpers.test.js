@@ -1,4 +1,52 @@
-const { isoDate, prettyDate, lowercase, join, uppercase, variable } = require('../../lib/helpers')
+const { isoDate, prettyDate, lowercase, join, uppercase, variable, eq, ne, lt, gt, lte, gte, and, or, multiple, replace } = require('../../lib/helpers')
+
+describe('Test helper - logic', () => {
+  const options = {}
+
+  it('eq / ===', () => {
+    expect(eq('Hei', 'Hade')).toBe(false)
+    expect(eq('Hei', 'Hei')).toBe(true)
+  })
+
+  it('ne / !==', () => {
+    expect(ne('Hei', 'Hade')).toBe(true)
+    expect(ne('Hei', 'Hei')).toBe(false)
+  })
+
+  it('lt / <', () => {
+    expect(lt(3, 10)).toBe(true)
+    expect(lt(42, 4)).toBe(false)
+  })
+
+  it('gt / >', () => {
+    expect(gt(3, 10)).toBe(false)
+    expect(gt(42, 4)).toBe(true)
+  })
+
+  it('lte / <=', () => {
+    expect(lte(10, 10)).toBe(true)
+    expect(lte(4, 42)).toBe(true)
+    expect(lte(6, 5)).toBe(false)
+  })
+
+  it('gte / >=', () => {
+    expect(gte(10, 10)).toBe(true)
+    expect(gte(6, 5)).toBe(true)
+    expect(gte(4, 42)).toBe(false)
+  })
+
+  it('and / &&', () => {
+    expect(and(true, 'hei', options)).toBe(true)
+    expect(and(false, '', options)).toBe(false)
+    expect(and(true, false, false, true, options)).toBe(false)
+  })
+
+  it('or / ||', () => {
+    expect(or('', 'hei', options)).toBe(true)
+    expect(or(false, '', options)).toBe(false)
+    expect(or(false, false, false, true, options)).toBe(true)
+  })
+})
 
 describe('Test helper - variable', () => {
   it('assigns handlebars variable', () => {
