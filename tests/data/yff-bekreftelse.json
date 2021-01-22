@@ -62,6 +62,21 @@
           "avdeling": "Dyrebeskyttelse"
         }
       },
+      "utdanningsprogram": {
+        "kode": "BA",
+        "type": "yrkesfaglig",
+        "tittel": {
+          "nb": "Bygg- og anleggsteknikk",
+          "nn": "Bygg- og anleggsteknikk",
+          "en": "Building and Construction"
+        },
+        "kortform": {
+          "nb": "Bygg- og anleggsteknikk",
+          "nn": "Bygg- og anleggsteknikk",
+          "en": "Building and Construction"
+        }
+      },
+      "level": "VG1",
       "year": 2021
     },
     "teacher": {
