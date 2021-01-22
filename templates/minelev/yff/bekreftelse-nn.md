@@ -8,25 +8,31 @@ address:
   city: 1234 POSTNR
 info:
   our-date: {{ isoDate created.timestamp }}
-  sector: {{ school.name }}
+  sector: {{ replace 'videregående skole' 'vidaregåande skule' school.name }}
   our-caseworker: {{ teacher.name }}
   paragraph: Offl. § 13 jf. fvl. §13 (1)
 ---
 
 # Stadfesting om elevutplassering
 
-Kopi sendt via e-post til { kopiPåEpost }
+{{variable 'skule' (replace 'videregående skole' 'vidaregåande skule' school.name) }}
+{{variable 'bekreftelse' content.bekreftelse}}
+{{variable 'bedrift' bekreftelse.bedriftsData}}
+
+{{#if bekreftelse.kopiPrEpost}}
+Kopi vart send på e-post til {{ lowercase (join bekreftelse.kopiPrEpost 'og') }}.
+{{/if}}
 
 **Meld frå til skulen så raskt som mogleg dersom opplysningane i brevet ikkje stemmer.**
 
-Vi stadfester at {{ student.name }} som er elev på {klasseTrinn} {utdanningsProgram} ved {{ school.name }} skal på utplassering hos {navnOpplaeringssted}.
+Vi stadfester at {{ student.name }} som er elev på {klasseTrinn} {utdanningsProgram} ved {{ skule }} skal på utplassering hos {{ bedrift.navn }}{{#if bedrift.avdeling}} ({{ bedrift.avdeling }}){{/if}}.
 
 ## Arbeidstid
 
-Tidsrom: {startDato} - {sluttDato}<br />
-Arbeidsdag: {startTid} - {sluttTid}<br />
-Dager i uken: {daysPerWeek}
-{{#if oppmotested}}<br />Oppmøtested: {oppmotested}{{/if}}
+Tidsrom: {{ bekreftelse.fraDato }} - {{ bekreftelse.tilDato }}<br />
+Arbeidsdag: {{ bekreftelse.startTid }} - {{ bekreftelse.sluttTid }}<br />
+Dagar i veka: {{ bekreftelse.daysPerWeek }}
+{{#if bekreftelse.oppmotested}}<br />Oppmøtestad: {{ bekreftelse.oppmotested }}{{/if}}
 
 ## Gjennomføring av utplassering
 
@@ -61,39 +67,41 @@ Fylkeskommunen si forsikringsordning gjeld under arbeid i arbeidstida og på dir
 
 ## Kontaktinformasjon
 
-Elev:<br />
-{{ student.name }}.{{#if student.mobile}} Telefon: {{ student.mobile }}.{{/if}}{{#if student.mail}} E-post: {{ student.mail }}{{/if}}
+**Elev:**<br /> 
+**{{ student.name }}**
+{{#if (or student.mobile student.mail)}}<br />{{/if}}{{#if student.mobile}}Telefon: {{ student.mobile }}{{/if}}{{#if student.mail}}{{#if student.mobile}} / {{/if}}E-post: {{ student.mail }}{{/if}}
 
-{{#if paarorende}}
-Elevens pårørande:<br />
-{{#each paarorende}}
-  - {{ name }}.
-  {{#if mobile}} Telefon: {{ mobile }}.{{/if}}
-  {{#if mail}} E-post: {{ mail }}{{/if}}
+{{#if bekreftelse.parorendeData}}
+{{variable 'flereParorende' (multiple bekreftelse.parorendeData)}}
+**Pårørande til eleven:**<br />
+{{#each bekreftelse.parorendeData}}
+  {{#if ../flereParorende}}-{{/if}} **{{ navn }}**
+  {{#if telefon}}<br />Telefon: {{ telefon }}{{/if}}
 {{/each}}
 {{/if}}
 
-{{#if kontaktperson}}
-Kontaktperson på opplæringsstaden:<br />
-{{#each kontaktperson}}
-  - {{ name }}.
-  {{#if mobile}} Telefon: {{ mobile }}.{{/if}}
-  {{#if mail}} E-post: {{ mail }}{{/if}}
+{{#if bekreftelse.kontaktpersonData}}
+{{variable 'flereKontakter' (multiple bekreftelse.kontaktpersonData)}}
+**Kontaktperson{{#if flereKontakter}}ar{{/if}} på opplæringsstaden:**<br />
+{{#each bekreftelse.kontaktpersonData}}
+  {{#if ../flereKontakter}}-{{/if}} **{{ navn }}**{{#if avdeling}} ({{ avdeling }}){{/if}}
+  {{#if (or telefon epost)}}<br />{{/if}}{{#if telefon}}Telefon: {{ telefon }}{{/if}}{{#if epost}}{{#if telefon}} / {{/if}}E-post: {{ epost }}{{/if}}
 {{/each}}
 {{/if}}
 
-Lærar og kontaktperson på skulen:<br />
-{{ teacher.name }}.{{#if teacher.mobile}} Telefon: {{ teacher.mobile }}.{{/if}}{{#if teacher.mail}} E-post: {{ teacher.mail }}{{/if}}
+**Lærar og kontaktperson på skulen:**<br />
+**{{ teacher.name }}**
+{{#if (or teacher.mobile teacher.mail)}}<br />{{/if}}{{#if teacher.mobile}}Telefon: {{ teacher.mobile }}{{/if}}{{#if teacher.mail}}{{#if teacher.mobile}} / {{/if}}E-post: {{ teacher.mail }}{{/if}}
 
 ## Har du spørsmål?
 
-Dersom du lurer på noko eller opplysningane ikkje stemmer kan du ta kontakt med {{ teacher.name }} på telefon {{#if teacher.mobile }}{{teacher.mobile}}{{else}}{{/if}} eller e-post {{ teacher.mail }}.
+Dersom du lurer på noko eller opplysningane ikkje stemmer, kan du ta kontakt med {{ teacher.name }} på {{#if teacher.mobile }}telefon: {{teacher.mobile}}, eller {{/if}}e-post: {{ teacher.mail }}.
 
 <br/>
 
 Med venleg helsing
 
 {{ teacher.name }}<br />
-{{ school.name }}<br />
+{{ skule }}<br />
 
 *Dokumentet er elektronisk godkjent og vert sent utan signatur.*

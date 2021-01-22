@@ -15,18 +15,23 @@ info:
 
 # Bekreftelse om elevutplassering
 
-Kopi sendt via e-post til { kopiPåEpost }
+{{variable 'bekreftelse' content.bekreftelse}}
+{{variable 'bedrift' bekreftelse.bedriftsData}}
+
+{{#if bekreftelse.kopiPrEpost}}
+Kopi sendt på e-post til {{ lowercase (join bekreftelse.kopiPrEpost 'og') }}.
+{{/if}}
 
 **Gi beskjed til skolen så raskt som mulig hvis opplysningene i brevet ikke stemmer.**
 
-Vi bekrefter at {{ student.name }} som er elev på {klasseTrinn} {utdanningsProgram} ved {{ school.name }} skal på utplassering hos {navnOpplaeringssted}.
+Vi bekrefter med dette at {{ student.name }} som er elev på {klasseTrinn} {utdanningsProgram} ved {{ school.name }} skal på utplassering hos {{ bedrift.navn }}{{#if bedrift.avdeling}} ({{ bedrift.avdeling }}){{/if}}.
 
 ## Arbeidstid
 
-Tidsrom: {startDato} - {sluttDato}<br />
-Arbeidsdag: {startTid} - {sluttTid}<br />
-Dager i uken: {daysPerWeek}
-{{#if oppmotested}}<br />Oppmøtested: {oppmotested}{{/if}}
+Tidsrom: {{ bekreftelse.fraDato }} - {{ bekreftelse.tilDato }}<br />
+Arbeidsdag: {{ bekreftelse.startTid }} - {{ bekreftelse.sluttTid }}<br />
+Dager i uken: {{ bekreftelse.daysPerWeek }}
+{{#if bekreftelse.oppmotested}}<br />Oppmøtested: {{ bekreftelse.oppmotested }}{{/if}}
 
 ## Gjennomføring av utplassering
 
@@ -36,7 +41,7 @@ Under finner du en oversikt over elevens, skolens og opplæringsstedets ansvar i
 
 - følge opplæringsstedets instrukser, oppgaver og avtalt arbeidstid
 - loggføre arbeidstid og arbeidsoppgaver
-- gjøre egenvurdering av arbeidsperioden i tillegg til å skrive rapport 
+- gjøre egenvurdering av arbeidsperioden i tillegg til å skrive rapport
 - innhente og levere politiattest i fagområdene som krever det
 
 **Skolen skal**
@@ -61,33 +66,35 @@ Fylkeskommunens forsikringsordning gjelder under arbeid i arbeidstiden, og på d
 
 ## Kontaktinformasjon
 
-Elev:<br />
-{{ student.name }}.{{#if student.mobile}} Telefon: {{ student.mobile }}.{{/if}}{{#if student.mail}} E-post: {{ student.mail }}{{/if}}
+**Elev:**<br /> 
+**{{ student.name }}**
+{{#if (or student.mobile student.mail)}}<br />{{/if}}{{#if student.mobile}}Telefon: {{ student.mobile }}{{/if}}{{#if student.mail}}{{#if student.mobile}} / {{/if}}E-post: {{ student.mail }}{{/if}}
 
-{{#if paarorende}}
-Elevens pårørende:<br />
-{{#each paarorende}}
-  - {{ name }}.
-  {{#if mobile}} Telefon: {{ mobile }}.{{/if}}
-  {{#if mail}} E-post: {{ mail }}{{/if}}
+{{#if bekreftelse.parorendeData}}
+{{variable 'flereParorende' (multiple bekreftelse.parorendeData)}}
+**Elevens pårørende:**<br />
+{{#each bekreftelse.parorendeData}}
+  {{#if ../flereParorende}}-{{/if}} **{{ navn }}**
+  {{#if telefon}}<br />Telefon: {{ telefon }}{{/if}}
 {{/each}}
 {{/if}}
 
-{{#if kontaktperson}}
-Kontaktperson på opplæringsstedet:<br />
-{{#each kontaktperson}}
-  - {{ name }}.
-  {{#if mobile}} Telefon: {{ mobile }}.{{/if}}
-  {{#if mail}} E-post: {{ mail }}{{/if}}
+{{#if bekreftelse.kontaktpersonData}}
+{{variable 'flereKontakter' (multiple bekreftelse.kontaktpersonData)}}
+**Kontaktperson{{#if flereKontakter}}er{{/if}} på utplasseringsstedet:**<br />
+{{#each bekreftelse.kontaktpersonData}}
+  {{#if ../flereKontakter}}-{{/if}} **{{ navn }}**{{#if avdeling}} ({{ avdeling }}){{/if}}
+  {{#if (or telefon epost)}}<br />{{/if}}{{#if telefon}}Telefon: {{ telefon }}{{/if}}{{#if epost}}{{#if telefon}} / {{/if}}E-post: {{ epost }}{{/if}}
 {{/each}}
 {{/if}}
 
-Lærer og kontaktperson på skolen:<br />
-{{ teacher.name }}.{{#if teacher.mobile}} Telefon: {{ teacher.mobile }}.{{/if}}{{#if teacher.mail}} E-post: {{ teacher.mail }}{{/if}}
+**Lærer og kontaktperson på skolen:**<br />
+**{{ teacher.name }}**
+{{#if (or teacher.mobile teacher.mail)}}<br />{{/if}}{{#if teacher.mobile}}Telefon: {{ teacher.mobile }}{{/if}}{{#if teacher.mail}}{{#if teacher.mobile}} / {{/if}}E-post: {{ teacher.mail }}{{/if}}
 
 ## Har du spørsmål?
 
-Hvis du lurer på noe eller opplysningene ikke stemmer kan du ta kontakt med {{ teacher.name }} på telefon {{#if teacher.mobile }}{{teacher.mobile}}{{else}}{{/if}} eller e-post {{ teacher.mail }}.
+Hvis du lurer på noe eller opplysningene ikke stemmer, kan du ta kontakt med {{ teacher.name }} på {{#if teacher.mobile }}telefon: {{teacher.mobile}}, eller {{/if}}e-post: {{ teacher.mail }}.
 
 <br/>
 
