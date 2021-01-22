@@ -1,4 +1,4 @@
-const { isoDate, prettyDate, lowercase } = require('../../lib/helpers')
+const { isoDate, prettyDate, lowercase, join } = require('../../lib/helpers')
 
 describe('Test helper - isoDate', () => {
   it('returns correct ISO-date from timestamp', () => {
@@ -28,5 +28,40 @@ describe('Test helper - lowercase', () => {
 
   it('returns empty string if input isn\'t a string', () => {
     expect(lowercase({})).toBe('')
+  })
+})
+
+describe('Test helper - join', () => {
+  it('returns empty string on no input', () => {
+    expect(join()).toBe('')
+  })
+
+  it('returns empty string if input isn\'t a string', () => {
+    expect(join(true)).toBe('')
+  })
+
+  it('returns empty string on empty array', () => {
+    expect(join([])).toBe('')
+  })
+
+  it('returns simple value on one input', () => {
+    expect(join(['Ape'])).toBe('Ape')
+  })
+
+  it('returns joined value on two inputs', () => {
+    expect(join(['Ape', 'Banan'])).toBe('Ape og Banan')
+  })
+
+  it('returns joined value with comma on three or more inputs', () => {
+    expect(join(['Ape', 'Banan', 'Kake'])).toBe('Ape, Banan og Kake')
+    expect(join(['Ape', 'Banan', 'Kake', 'Marsipan'])).toBe('Ape, Banan, Kake og Marsipan')
+  })
+
+  it('returns value joined with custom last part', () => {
+    expect(join(['Ape', 'Banan'], 'eller')).toBe('Ape eller Banan')
+  })
+
+  it('filters out empty values', () => {
+    expect(join(['Ape', '', 'Banan', '', ''])).toBe('Ape og Banan')
   })
 })
