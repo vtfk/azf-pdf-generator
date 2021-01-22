@@ -1,5 +1,13 @@
 const { isoDate, prettyDate, lowercase, join } = require('../../lib/helpers')
 
+describe('Test helper - variable', () => {
+  it('assigns handlebars variable', () => {
+    const options = { data: { root: {} } }
+    variable('VAR', 'Er no tull!', options)
+    expect(options.data.root.VAR).toBe('Er no tull!')
+  })
+})
+
 describe('Test helper - isoDate', () => {
   it('returns correct ISO-date from timestamp', () => {
     const date = new Date()
