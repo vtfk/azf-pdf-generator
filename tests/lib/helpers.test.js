@@ -56,6 +56,20 @@ describe('Test helper - variable', () => {
   })
 })
 
+describe('Test helper - multiple', () => {
+  it('returns false on no value', () => {
+    expect(multiple()).toBe(false)
+  })
+
+  it('returns false on single value', () => {
+    expect(multiple(['Gro'])).toBe(false)
+  })
+
+  it('returns true on multiple values', () => {
+    expect(multiple(['Gro', 'Kåre'])).toBe(true)
+  })
+})
+
 describe('Test helper - isoDate', () => {
   it('returns correct ISO-date from timestamp', () => {
     const date = new Date()
