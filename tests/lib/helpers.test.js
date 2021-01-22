@@ -1,4 +1,4 @@
-const { isoDate, prettyDate, lowercase, join } = require('../../lib/helpers')
+const { isoDate, prettyDate, lowercase, join, uppercase, variable } = require('../../lib/helpers')
 
 describe('Test helper - variable', () => {
   it('assigns handlebars variable', () => {
@@ -26,6 +26,16 @@ describe('Test helper - prettyDate', () => {
 
   it('returns input if passed string isn\'t a valid date', () => {
     expect(prettyDate('test')).toBe('test')
+  })
+})
+
+describe('Test helper - uppercase', () => {
+  it('returns uppercase date', () => {
+    expect(uppercase('heLlo')).toBe('HELLO')
+  })
+
+  it('returns empty string if input isn\'t a string', () => {
+    expect(uppercase({})).toBe('')
   })
 })
 
