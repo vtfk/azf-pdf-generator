@@ -3,6 +3,7 @@ const { writeFile } = require('fs').promises
 const { join } = require('path')
 
 const varselFagContent = require('./data/varsel-fag.json')
+const yffBekreftelseContent = require('./data/yff-bekreftelse.json')
 
 const context = { log: console.log, invocationId: 'testing' }
 
@@ -38,7 +39,7 @@ describe('GenerateDocument function test', () => {
       })
   })
 
-  it('can parse and write returned base64 to .pdf file correctly', async () => {
+  it('varsel-fag :: can parse and write returned base64 to .pdf file correctly', async () => {
     const document = await generateDocumentFunc(context, { body: varselFagContent })
     const { base64 } = document.body.data
     await expect(typeof base64).toBe('string')
@@ -47,5 +48,16 @@ describe('GenerateDocument function test', () => {
     await expect(buffer.byteLength).toBeGreaterThan(50000)
 
     await writeFile(join(__dirname, '/data/varsel-fag.pdf'), buffer)
+  })
+
+  it('yff-bekreftelse :: can parse and write returned base64 to .pdf file correctly', async () => {
+    const document = await generateDocumentFunc(context, { body: yffBekreftelseContent })
+    const { base64 } = document.body.data
+    await expect(typeof base64).toBe('string')
+
+    const buffer = Buffer.from(base64, 'base64')
+    await expect(buffer.byteLength).toBeGreaterThan(80000)
+
+    await writeFile(join(__dirname, '/data/yff-bekreftelse.pdf'), buffer)
   })
 })
