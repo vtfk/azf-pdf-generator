@@ -70,6 +70,20 @@ describe('Test helper - multiple', () => {
   })
 })
 
+describe('Test helper - replace', () => {
+  it('returns correctly replaced value', () => {
+    expect(replace('hei', 'hade', 'hei på deg')).toBe('hade på deg')
+  })
+
+  it('returns input if nothing was replaced', () => {
+    expect(replace('hei', 'hade', 'god helg')).toBe('god helg')
+  })
+
+  it('returns nothing if nothing is to be replaced', () => {
+    expect(replace('hei', 'hade')).toBe('')
+  })
+})
+
 describe('Test helper - isoDate', () => {
   it('returns correct ISO-date from timestamp', () => {
     const date = new Date()
