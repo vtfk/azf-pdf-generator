@@ -3,9 +3,9 @@ definition: brevmal
 language: nb
 watermark: {{#if preview}} true {{else}} false {{/if}}
 address:
-  name: BEDRIFT
-  street: GATEADRESSE
-  city: 1234 POSTNR
+  name: {{ student.name }}
+  street: {{ student.address }}
+  city: {{ student.city }}
 info:
   our-date: {{ isoDate created.timestamp }}
   sector: {{ school.name }}
