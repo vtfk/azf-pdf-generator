@@ -1,4 +1,4 @@
-const { isoDate, prettyDate, lowercase, join, uppercase, variable, eq, ne, lt, gt, lte, gte, and, or, multiple, replace } = require('../../lib/helpers')
+const { isoDate, prettyDate, lowercase, join, uppercase, variable, eq, ne, lt, gt, lte, gte, and, or, multiple, replace, capitalize } = require('../../lib/helpers')
 
 describe('Test helper - logic', () => {
   const options = {}
@@ -102,6 +102,20 @@ describe('Test helper - prettyDate', () => {
 
   it('returns input if passed string isn\'t a valid date', () => {
     expect(prettyDate('test')).toBe('test')
+  })
+})
+
+describe('Test helper - capitalize', () => {
+  it('returns capitalized data', () => {
+    expect(capitalize('heLlo')).toBe('Hello')
+  })
+
+  it('returns empty string if input is an empty string', () => {
+    expect(capitalize('')).toBe('')
+  })
+
+  it('returns empty string if input isn\'t a string', () => {
+    expect(capitalize({})).toBe('')
   })
 })
 
