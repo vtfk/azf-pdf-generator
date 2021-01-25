@@ -3,9 +3,9 @@ definition: brevmal
 language: nb
 watermark: {{#if preview}} true {{else}} false {{/if}}
 address:
-  name: BEDRIFT
-  street: GATEADRESSE
-  city: 1234 POSTNR
+  name: {{#if recipient.navn }}{{recipient.navn}}{{else}}{{content.bekreftelse.bedriftsData.name}}{{/if}}
+  street: {{#if recipient.adresse }}{{recipient.adresse}}{{else}}{{content.bekreftelse.bedriftsData.adresse}}{{/if}}
+  city: {{#if recipient.postnummer }}{{recipient.postnummer}}{{else}}{{content.bekreftelse.bedriftsData.postnummer}}{{/if}} {{#if recipient.poststed }}{{recipient.poststed}}{{else}}{{content.bekreftelse.bedriftsData.poststed}}{{/if}}
 info:
   our-date: {{ isoDate created.timestamp }}
   sector: {{ school.name }}
