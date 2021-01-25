@@ -20,6 +20,12 @@
       "firstName": "Brage",
       "lastName": "Dahl"
     },
+    "recipient": {
+      "fullName": "Brage Henriksen Dahl",
+      "streetAddress": "Portveien 2",
+      "zipCode": "0468",
+      "zipPlace": "Oslo"
+    },
     "content": {
       "year": "2020/2021",
       "period": {

@@ -23,6 +23,12 @@
       "mail": "bra2001@skole.vtfk.no",
       "classId": "KRAVS:TEST"
     },
+    "recipient": {
+      "fullName": "Brage Henriksen Dahl",
+      "streetAddress": "Portveien 2",
+      "zipCode": "0468",
+      "zipPlace": "Oslo"
+    },
     "content": {
       "bekreftelse": {
         "kopiPrEpost": [
