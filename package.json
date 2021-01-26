@@ -19,7 +19,7 @@
     "@vtfk/logger": "2.4.1",
     "ajv": "6.12.6",
     "handlebars": "4.7.6",
-    "html-to-pdfmake": "2.1.2",
+    "html-to-pdfmake": "2.1.3",
     "jsdom": "16.4.0",
     "markdown-it": "12.0.4",
     "markdown-it-front-matter": "0.2.3",
