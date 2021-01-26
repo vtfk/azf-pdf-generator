@@ -1,0 +1,110 @@
+{
+  "system": "minelev",
+  "template": "yff/bekreftelse",
+  "language": "nn",
+  "data": {
+    "preview": true,
+    "created": {
+      "timestamp": 1606252264318,
+      "createdBy": "tes0101"
+    },
+    "modified": [{
+      "timestamp": 1606252264318,
+      "modifiedBy": "tes0101"
+    }],
+    "type": "yff",
+    "variant": "bekreftelse",
+    "student": {
+      "username": "bra2001",
+      "name": "Brage Dahl",
+      "firstName": "Brage",
+      "lastName": "Dahl",
+      "mobile": "815 49 300",
+      "mail": "bra2001@skole.vtfk.no",
+      "classId": "KRAVS:TEST"
+    },
+    "recipient": {
+      "fullName": "Brage Henriksen Dahl",
+      "streetAddress": "Portveien 2",
+      "zipCode": "0468",
+      "zipPlace": "Oslo"
+    },
+    "content": {
+      "bekreftelse": {
+        "kopiPrEpost": [
+          "kari@nordmann.no"
+        ],
+        "fraDato": "18.09.2020",
+        "tilDato": "23.07.2021",
+        "daysPerWeek": "2",
+        "startTid": "08:00",
+        "sluttTid": "15:00",
+        "oppmotested": "",
+        "kontaktpersonData": [
+          {
+            "navn": "Kontakt Person Andersen",
+            "telefon": "95959595",
+            "epost": "kontakt.person@andersen.no",
+            "avdeling": "EDB-avdelingen"
+          }
+        ],
+        "parorendeData": [
+          {
+            "navn": "Ola Nordmann",
+            "telefon": "45678910"
+          },
+          {
+            "navn": "Truls Hansen",
+            "telefon": "98765432"
+          }
+        ],
+        "bedriftsNavn": "Andersen hest og kjerre AS",
+        "bedriftsData": {
+          "organisasjonsNummer": "920667856",
+          "navn": "Andersen hest og kjerre AS",
+          "adresse": "Gateveien 5",
+          "postnummer": "3925",
+          "poststed": "PORSGRUNN",
+          "avdeling": "Dyrebeskyttelse"
+        }
+      },
+      "utdanningsprogram": {
+        "kode": "BA",
+        "type": "yrkesfaglig",
+        "tittel": {
+          "nb": "Bygg- og anleggsteknikk",
+          "nn": "Bygg- og anleggsteknikk",
+          "en": "Building and Construction"
+        },
+        "kortform": {
+          "nb": "Bygg- og anleggsteknikk",
+          "nn": "Bygg- og anleggsteknikk",
+          "en": "Building and Construction"
+        }
+      },
+      "level": "VG1",
+      "year": 2021
+    },
+    "teacher": {
+      "username": "per2412",
+      "name": "Per Test",
+      "firstName": "Per",
+      "lastName": "Test",
+      "mobile": "45352515",
+      "mail": "per.test@vtfk.no"
+    },
+    "school": {
+      "id": "TESVS",
+      "name": "Testen videregående skole",
+      "shortName": "Testen vgs"
+    },
+    "isEncrypted": false,
+    "status": [
+      {
+        "status": "queued",
+        "timestamp": 1610975973808
+      }
+    ],
+    "isQueued": true
+  }
+}
