@@ -15,9 +15,6 @@ info:
 
 # Elevens lokale læreplan i yrkesfaglig fordypning (YFF)
 
-{{variable 'bekreftelse' content.bekreftelse}}
-{{variable 'bedrift' bekreftelse.bedriftsData}}
-
 Yrkesfaglig fordypning skal normalt brukes til opplæring i kompetansemål hentet fra læreplaner Vg3 for opplæring i bedrift og i skole. Det skal utarbeides lokale læreplaner basert på de nasjonale kompetansemålene. Det skal framgå av den lokale læreplanen hvilke nasjonale kompetansemål som ligger til grunn for opplæringen.
 
 ## Skolens felles mål for yrkesfaglig fordypning – gjelder Vg1 og Vg2
