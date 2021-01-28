@@ -13,22 +13,40 @@ info:
   paragraph: Offl. § 13 jf. fvl. §13 (1)
 ---
 
-# Tilbakemelding etter utplassering hos {{ content.bedriftsData.navn }}
-
 {{variable 'skule' (replace 'videregående skole' 'vidaregåande skule' school.name) }}
+{{variable 'utplassering' content.utplassering}}
+{{variable 'bedrift' utplassering.bedriftsData}}
 
-{{ student.name }} i {{ student.classId }} på {{ school.name }} har vore på utplassering hos {{ content.bedriftsData.navn }}. Utplasseringa har funne stad i perioden { content.periode } i skuleåret { content.year }.
+# Tilbakemelding etter utplassering hos {{ bedrift.navn }}
+
+{{ student.name }} i {{ student.level }} på {{ skule }} har vore på utplassering hos {{ bedrift.navn }}. Utplasseringa har funne stad i perioden {{ utplassering.fraDato }} - {{ utplassering.tilDato }} i skuleåret {{ content.year }}.
+
+## Kompetansemål og arbeidsoppgåver
+
+{{#each content.kompetansemal}}
+
+- {{#if grep}}{{uppercaseFirst grep.tittel.nn}}<br />{{/if}}
+  {{#if arbeidsoppgaver}}**Arbeidsoppgåver:** {{uppercaseFirst arbeidsoppgaver}}<br />{{/if}}
+  {{#if tilbakemelding}}**Måloppnåing:** {{ replace 'Lav' 'Låg' (replace 'Høy' 'Høg' (replace 'måloppnåelse' 'måloppnåing' (uppercaseFirst tilbakemelding))) }}<br />{{/if}}
+
+{{/each}}
 
 ## Verksemda sitt inntrykk og tilbakemelding til lærar
 
-{tilbakemeldingKompetansemaal}
-{tilbakemeldingInntrykk}
+{{#each content.evalueringsdata}}
+{{#if (and score (ne score 0))}}
+
+- {{#if title.nn}}{{title.nn}}{{else}}{{title}}{{/if}}<br />
+  **Måloppnåing:** {{ replace 'forventet' 'forventa' (uppercaseFirst score) }}
+
+{{/if}}
+{{/each}}
 
 ## Eleven sitt fråvær
 
-Tal på dager: {fravaerAntallDager}
-Tal på timar: {fravaerAntallTimer}
-{fravaerVarsling}
+Tal på dager: {{ content.fravar.dager }}<br/>
+Tal på timar: {{ content.fravar.timer }}<br/>
+{{#if (eq content.fravar.varslet 'ja')}}Eleven varsla sjølv om fråværet.{{/if}}{{#if (eq content.fravar.varslet 'nei')}}Eleven varsla ikkje om fråværet.{{/if}}{{#if (eq content.fravar.varslet 'av og til')}}Eleven varsla sjølv om noko av fråværet.{{/if}}
 
 <br/>
 

@@ -48,7 +48,6 @@ Antall timer: {{ content.fravar.timer }}<br/>
 {{#if (eq content.fravar.varslet 'ja')}}Eleven varslet selv om fraværet.{{/if}}{{#if (eq content.fravar.varslet 'nei')}}Eleven varslet ikke om fraværet.{{/if}}{{#if (eq content.fravar.varslet 'av og til')}}Eleven varslet selv om noe av fraværet.{{/if}}
 
 <br/>
-<br/>
 
 Med vennlig hilsen
 
