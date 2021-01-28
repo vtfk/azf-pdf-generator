@@ -44,8 +44,8 @@ Timetallet er oppgitt i 60 minutters enheter. I 45 minutters skoletimer utgjør 
 
 {{#each maal}}
 
-- {{#if programomraade}}**Programområde:** {{uppercaseFirst programomraade.tittel.nn}}<br />{{/if}}
-  {{#if grep}}**Kompetansemål:** {{uppercaseFirst grep.tittel.nn}}<br />{{/if}}
+- {{#if programomraade}}**Programområde:** {{uppercaseFirst programomraade.tittel.nb}}<br />{{/if}}
+  {{#if grep}}**Kompetansemål:** {{uppercaseFirst grep.tittel.nb}}<br />{{/if}}
   {{#if arbeidsoppgaver}}**Arbeidsoppgaver:** {{uppercaseFirst arbeidsoppgaver}}<br />{{/if}}
 
 {{/each}}
