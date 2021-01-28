@@ -13,24 +13,41 @@ info:
   paragraph: Offl. § 13 jf. fvl. §13 (1)
 ---
 
-# Tilbakemelding etter utplassering hos {{ content.bedriftsData.navn }}
+{{variable 'utplassering' content.utplassering}}
+{{variable 'bedrift' utplassering.bedriftsData}}
 
-{{variable 'bekreftelse' content.bekreftelse}}
-{{variable 'bedrift' bekreftelse.bedriftsData}}
+# Tilbakemelding etter utplassering hos {{ bedrift.navn }}
 
-{{ student.name }} i {{ student.classId }} på {{ school.name }} har vært på utplassering hos {{ content.bedriftsData.navn }}. Utplasseringen har foregått i perioden { content.periode } i skoleåret { content.year }.
+{{ student.name }} i {{ student.level }} på {{ school.name }} har vært på utplassering hos {{ bedrift.navn }}. Utplasseringen har foregått i perioden {{ utplassering.fraDato }} - {{ utplassering.tilDato }} skoleåret {{ content.year }}.
+
+## Kompetansemål og arbeidsoppgaver
+
+{{#each content.kompetansemal}}
+
+- {{#if grep}}{{uppercaseFirst grep.tittel.nb}}<br />{{/if}}
+  {{#if arbeidsoppgaver}}**Arbeidsoppgaver:** {{uppercaseFirst arbeidsoppgaver}}<br />{{/if}}
+  {{#if tilbakemelding}}**Måloppnåelse:** {{uppercaseFirst tilbakemelding}}<br />{{/if}}
+
+{{/each}}
 
 ## Virksomhetens inntrykk og tilbakemelding til lærer
 
-{tilbakemeldingKompetansemaal}
-{tilbakemeldingInntrykk}
+{{#each content.evalueringsdata}}
+{{#if (and score (ne score 0))}}
+
+- {{#if title.nb}}{{title.nb}}{{else}}{{title}}{{/if}}<br />
+  **Måloppnåelse:** {{uppercaseFirst score }}
+
+{{/if}}
+{{/each}}
 
 ## Elevens fravær
 
-Antall dager: {fravaerAntallDager}
-Antall timer: {fravaerAntallTimer}
-{fravaerVarsling}
+Antall dager: {{ content.fravar.dager }}<br/>
+Antall timer: {{ content.fravar.timer }}<br/>
+{{#if (eq content.fravar.varslet 'ja')}}Eleven varslet selv om fraværet.{{/if}}{{#if (eq content.fravar.varslet 'nei')}}Eleven varslet ikke om fraværet.{{/if}}{{#if (eq content.fravar.varslet 'av og til')}}Eleven varslet selv om noe av fraværet.{{/if}}
 
+<br/>
 <br/>
 
 Med vennlig hilsen

@@ -1,0 +1,350 @@
+{
+  "system": "minelev",
+  "template": "yff/tilbakemelding",
+  "language": "nb",
+  "data": {
+    "preview": true,
+    "created": {
+      "timestamp": 1606252264318,
+      "createdBy": "tes0101"
+    },
+    "modified": [{
+      "timestamp": 1606252264318,
+      "modifiedBy": "tes0101"
+    }],
+    "type": "yff",
+    "variant": "bekreftelse",
+    "student": {
+      "username": "bra2001",
+      "name": "Brage Dahl",
+      "firstName": "Brage",
+      "lastName": "Dahl",
+      "mobile": "815 49 300",
+      "mail": "bra2001@skole.vtfk.no",
+      "classId": "KRAVS:TEST",
+      "level": "VG1"
+    },
+    "recipient": {
+      "fullName": "Brage Henriksen Dahl",
+      "streetAddress": "Portveien 2",
+      "zipCode": "0468",
+      "zipPlace": "Oslo"
+    },
+    "content": {
+      "utplassering": {
+        "_id": "5d7f29d059e31d0007cc9ff5",
+        "type": "utplassering",
+        "created": {
+          "timeStamp": 1568615152589,
+          "createdBy": "arv1204"
+        },
+        "modified": [
+          {
+            "timeStamp": 1568615152589,
+            "modifiedBy": "arv1204"
+          }
+        ],
+        "student": "fer0804",
+        "bedriftsNavn": "NOTODDEN KOMMUNE",
+        "bedriftsData": {
+          "organisasjonsNummer": "976825063",
+          "navn": "NOTODDEN KOMMUNE",
+          "adresse": "Sauheradvegen 5",
+          "postnummer": "3683",
+          "poststed": "NOTODDEN",
+          "avdeling": "HEDDAL HJEMMETJENESTE"
+        },
+        "kontaktpersonData": [
+          {
+            "navn": "Fornavn Etternavn",
+            "telefon": "98765432",
+            "epost": "fornavn.etternavn@notodden.kommune.no",
+            "avdeling": ""
+          }
+        ],
+        "parorendeData": [
+          {
+            "navn": "Fornavn Etternavn",
+            "telefon": "98765432"
+          }
+        ],
+        "fraDato": "19.07.2019",
+        "tilDato": "20.09.2019",
+        "daysPerWeek": "3",
+        "startTid": "07:30",
+        "sluttTid": "15:00",
+        "oppmotested": "Sauheradvegen",
+        "tilbakemelding": false
+      },
+      "evalueringsdata": {
+        "hms": {
+          "title": {
+            "nb": "Eleven følger retningslinjer og HMS innenfor fagområdet",
+            "nn": "Eleven følgjer retningslinjer og HMS innanfor fagområdet"
+          },
+          "score": "Som forventet"
+        },
+        "respekt-retningslinjer": {
+          "title": {
+            "nb": "Eleven viser gode holdninger og respekt for opplæringsstedets regler og retningslinjer",
+            "nn": "Eleven viser gode haldningar og respekt for opplæringsstaden sine reglar og retningslinjer"
+          },
+          "score": "Under forventet"
+        },
+        "respekt-mennesker": {
+          "title": {
+            "nb": "Eleven viser gode holdninger og respekt for mennesker de møter under utplasseringen",
+            "nn": "Eleven viser gode haldningar og respekt for menneske dei møter under utplasseringa"
+          },
+          "score": "Som forventet"
+        },
+        "tilpasningsdyktig": {
+          "title": {
+            "nb": "Eleven er tilpasningsdyktig og kan samarbeide",
+            "nn": "Eleven er tilpassingsdyktig og kan samarbeide"
+          },
+          "score": "Som forventet"
+        },
+        "kommunikasjon": {
+          "title": {
+            "nb": "Eleven har kommunikasjonsevner i møte med kollegaer, kunder og brukere",
+            "nn": "Eleven viser kommunikasjonsevner i møte med kollegaer, kundar og brukarar"
+          }
+        },
+        "veiledning": {
+          "title": {
+            "nb": "Eleven tar imot veiledning",
+            "nn": "Eleven tek imot rettleiing"
+          },
+          "score": "Under forventet"
+        },
+        "oppfylle": {
+          "title": {
+            "nb": "Eleven utfører tildelte arbeidsoppgaver",
+            "nn": "Eleven utfører tildelte arbeidsoppgåver"
+          },
+          "score": 0
+        },
+        "initiativ": {
+          "title": {
+            "nb": "Eleven viser initiativ og interesse for arbeidet",
+            "nn": "Eleven viser initiativ og interesse for arbeidet"
+          },
+          "score": "Over forventet"
+        },
+        "orden": {
+          "title": "Orden (punktlighet)",
+          "score": "Over forventet"
+        },
+        "atferd": {
+          "title": "Atferd (holdninger, respekt)",
+          "score": "Som forventet"
+        }
+      },
+      "fravar": {
+        "dager": "2",
+        "timer": "5",
+        "varslet": "av og til"
+      },
+      "kompetansemal": [
+        {
+        "_id": "5d7f2af09f7cda0008d292d4",
+        "type": "maal",
+        "created": {
+          "timeStamp": 1568615152589,
+          "createdBy": "arv1204"
+        },
+        "modified": [{
+          "timeStamp": 1568615152589,
+          "modifiedBy": "arv1204"
+        }],
+        "studentUserName": "fer0804",
+        "referanseID": "5d7f29d059e31d0007cc9ff5",
+        "referanseTittel": "Norges røde kors",
+        "grep": {
+          "kode": "K3703",
+          "url-data": "https://data.udir.no/kl06/v201906/kompetansemaal/K3703",
+          "tittel": {
+            "nb": "mestre tre ulike typer masseflyttingsmaskiner",
+            "nn": "mestre tre ulike typer masseflyttingsmaskiner",
+            "en": "mestre tre ulike typer masseflyttingsmaskiner"
+          }
+        },
+        "arbeidsoppgaver": "lede morgentrimmen",
+        "tilbakemelding": "Lav måloppnåelse"
+      }, {
+        "_id": "5d7f2af09f7cda0008d292d4",
+        "type": "maal",
+        "created": {
+          "timeStamp": 1568615152589,
+          "createdBy": "arv1204"
+        },
+        "modified": [{
+          "timeStamp": 1568615152589,
+          "modifiedBy": "arv1204"
+        }],
+        "studentUserName": "fer0804",
+        "referanseID": "5d7f29d059e31d0007cc9ff5",
+        "referanseTittel": "Norges røde kors",
+        "grep": {
+          "kode": "K3703",
+          "url-data": "https://data.udir.no/kl06/v201906/kompetansemaal/K3703",
+          "tittel": {
+            "nb": "mestre tre ulike typer masseflyttingsmaskiner",
+            "nn": "mestre tre ulike typer masseflyttingsmaskiner",
+            "en": "mestre tre ulike typer masseflyttingsmaskiner"
+          }
+        },
+        "arbeidsoppgaver": "lede morgentrimmen",
+        "tilbakemelding": "Høy måloppnåelse"
+      }, {
+        "_id": "5d7f2af09f7cda0008d292d4",
+        "type": "maal",
+        "created": {
+          "timeStamp": 1568615152589,
+          "createdBy": "arv1204"
+        },
+        "modified": [{
+          "timeStamp": 1568615152589,
+          "modifiedBy": "arv1204"
+        }],
+        "studentUserName": "fer0804",
+        "referanseID": "5d7f29d059e31d0007cc9ff5",
+        "referanseTittel": "Norges røde kors",
+        "grep": {
+          "kode": "K3703",
+          "url-data": "https://data.udir.no/kl06/v201906/kompetansemaal/K3703",
+          "tittel": {
+            "nb": "mestre tre ulike typer masseflyttingsmaskiner",
+            "nn": "mestre tre ulike typer masseflyttingsmaskiner",
+            "en": "mestre tre ulike typer masseflyttingsmaskiner"
+          }
+        },
+        "arbeidsoppgaver": "lede morgentrimmen",
+        "tilbakemelding": "Lav måloppnåelse"
+      }, {
+        "_id": "5d7f2af09f7cda0008d292d5",
+        "type": "maal",
+        "created": {
+          "timeStamp": 1568615152589,
+          "createdBy": "arv1204"
+        },
+        "modified": [{
+          "timeStamp": 1568615152589,
+          "modifiedBy": "arv1204"
+        }],
+        "studentUserName": "fer0804",
+        "referanseID": "5d7f29d059e31d0007cc9ff5",
+        "referanseTittel": "Norges røde kors",
+        "grep": {
+          "kode": "K3703",
+          "url-data": "https://data.udir.no/kl06/v201906/kompetansemaal/K3703",
+          "tittel": {
+            "nb": "bruke relevant måleutstyr",
+            "nn": "bruke relevant måleutstyr",
+            "en": "bruke relevant måleutstyr"
+          }
+        },
+        "arbeidsoppgaver": "lede morgentrimmen",
+        "tilbakemelding": "Middels måloppnåelse"
+      }, {
+        "_id": "5d7f2af09f7cda0008d292d6",
+        "type": "maal",
+        "created": {
+          "timeStamp": 1568615152589,
+          "createdBy": "arv1204"
+        },
+        "modified": [{
+          "timeStamp": 1568615152589,
+          "modifiedBy": "arv1204"
+        }],
+        "studentUserName": "fer0804",
+        "referanseID": "5d7f29d059e31d0007cc9ff5",
+        "referanseTittel": "Norges røde kors",
+        "grep": {
+          "kode": "K3703",
+          "url-data": "https://data.udir.no/kl06/v201906/kompetansemaal/K3703",
+          "tittel": {
+            "nb": "utføre fundamentering, oppbygging og komprimering i henhold til tegninger og beskrivelser",
+            "nn": "utføre fundamentering, oppbygging og komprimering i henhold til tegninger og beskrivelser",
+            "en": "utføre fundamentering, oppbygging og komprimering i henhold til tegninger og beskrivelser"
+          }
+        },
+        "arbeidsoppgaver": "lede morgentrimmen",
+        "tilbakemelding": "Lav måloppnåelse"
+      }, {
+        "_id": "5d7f2af09f7cda0008d292d7",
+        "type": "maal",
+        "created": {
+          "timeStamp": 1568615152589,
+          "createdBy": "arv1204"
+        },
+        "modified": [{
+          "timeStamp": 1568615152589,
+          "modifiedBy": "arv1204"
+        }],
+        "studentUserName": "fer0804",
+        "referanseID": "5d7f29d059e31d0007cc9ff5",
+        "referanseTittel": "Norges røde kors",
+        "grep": {
+          "kode": "K3703",
+          "url-data": "https://data.udir.no/kl06/v201906/kompetansemaal/K3703",
+          "tittel": {
+            "nb": "gjøre rede for innholdet i relevant nasjonalt og internasjonalt regelverk som gjelder kundens rettigheter og plikter, herunder regler om klageadgang",
+            "nn": "gjøre rede for innholdet i relevant nasjonalt og internasjonalt regelverk som gjelder kundens rettigheter og plikter, herunder regler om klageadgang",
+            "en": "gjøre rede for innholdet i relevant nasjonalt og internasjonalt regelverk som gjelder kundens rettigheter og plikter, herunder regler om klageadgang"
+          }
+        },
+        "arbeidsoppgaver": "lede morgentrimmen",
+        "tilbakemelding": "Lav måloppnåelse"
+      }, {
+        "_id": "5d7f2af09f7cda0008d292d8",
+        "type": "maal",
+        "created": {
+          "timeStamp": 1568615152589,
+          "createdBy": "arv1204"
+        },
+        "modified": [{
+          "timeStamp": 1568615152589,
+          "modifiedBy": "arv1204"
+        }],
+        "studentUserName": "fer0804",
+        "referanseID": "5d7f29d059e31d0007cc9ff5",
+        "referanseTittel": "Norges røde kors",
+        "grep": {
+          "kode": "K3703",
+          "url-data": "https://data.udir.no/kl06/v201906/kompetansemaal/K3703",
+          "tittel": {
+            "nb": "mestre tre ulike typer masseflyttingsmaskiner",
+            "nn": "mestre tre ulike typer masseflyttingsmaskiner",
+            "en": "mestre tre ulike typer masseflyttingsmaskiner"
+          }
+        },
+        "arbeidsoppgaver": "lede morgentrimmen",
+        "tilbakemelding": "Middels måloppnåelse"
+      }],
+      "year": "2020/2021"
+    },
+    "teacher": {
+      "username": "per2412",
+      "name": "Per Test",
+      "firstName": "Per",
+      "lastName": "Test",
+      "mobile": "45352515",
+      "mail": "per.test@vtfk.no"
+    },
+    "school": {
+      "id": "TESVS",
+      "name": "Testen videregående skole",
+      "shortName": "Testen vgs"
+    },
+    "isEncrypted": false,
+    "status": [
+      {
+        "status": "queued",
+        "timestamp": 1610975973808
+      }
+    ],
+    "isQueued": true
+  }
+}
