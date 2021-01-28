@@ -61,6 +61,14 @@ describe('Test helper - multiple', () => {
     expect(multiple()).toBe(false)
   })
 
+  it('returns false on empty array', () => {
+    expect(multiple([])).toBe(false)
+  })
+
+  it('returns false on array with empty object', () => {
+    expect(multiple([{}])).toBe(false)
+  })
+
   it('returns false on single value', () => {
     expect(multiple(['Gro'])).toBe(false)
   })
