@@ -38,9 +38,23 @@ Yrkesfaglig fordypning skal normalt brukes til opplæring i kompetansemål hente
 
 Timetallet er oppgitt i 60 minutters enheter. I 45 minutters skoletimer utgjør dette 6 uketimer på Vg1 (224 årstimer) og 9 uketimer på Vg2 (337 årstimer).
 
-## Lokal læreplan for {{ student.name }} for skoleåret {{ content.year }}
+<h2 class="pdf-pagebreak-before"><br />
+  Lokal læreplan for {{ student.name }} for skoleåret {{ content.year }}
+</h2>
 
-{{ content.lokallaereplan }}
+{{#each content.utplasseringer}}
+  **{{name}}**
+
+{{#each maal}}
+
+- {{#if programomraade}}**Programområde:** {{uppercaseFirst programomraade.tittel.nn}}<br />{{/if}}
+  {{#if grep}}**Kompetansemål:** {{uppercaseFirst grep.tittel.nn}}<br />{{/if}}
+  {{#if arbeidsoppgaver}}**Arbeidsoppgaver:** {{uppercaseFirst arbeidsoppgaver}}<br />{{/if}}
+
+{{/each}}
+{{/each}}
+
+<br />
 
 Elevens lokale læreplan er godkjent av den rektor har delegert ansvaret til.
 

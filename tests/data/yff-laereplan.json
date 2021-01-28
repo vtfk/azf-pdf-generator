@@ -1,0 +1,147 @@
+{
+  "system": "minelev",
+  "template": "yff/laereplan",
+  "language": "nn",
+  "data": {
+    "preview": true,
+    "created": {
+      "timestamp": 1606252264318,
+      "createdBy": "tes0101"
+    },
+    "modified": [{
+      "timestamp": 1606252264318,
+      "modifiedBy": "tes0101"
+    }],
+    "type": "yff",
+    "variant": "bekreftelse",
+    "student": {
+      "username": "bra2001",
+      "name": "Brage Dahl",
+      "firstName": "Brage",
+      "lastName": "Dahl",
+      "mobile": "815 49 300",
+      "mail": "bra2001@skole.vtfk.no",
+      "classId": "KRAVS:TEST"
+    },
+    "recipient": {
+      "fullName": "Brage Henriksen Dahl",
+      "streetAddress": "Portveien 2",
+      "zipCode": "0468",
+      "zipPlace": "Oslo"
+    },
+    "content": {
+      "utplasseringer": [{
+        "id": "5d7f29d059e31d0007cc9ff5",
+        "name": "Norges røde kors",
+        "maal": [{
+          "grep": {
+            "kode": "K3703",
+            "url-data": "https://data.udir.no/kl06/v201906/kompetansemaal/K3703",
+            "tittel": {
+              "nb": "mestre tre ulike typer masseflyttingsmaskiner",
+              "nn": "mestre tre ulike typer masseflyttingsmaskiner",
+              "en": "mestre tre ulike typer masseflyttingsmaskiner"
+            }
+          },
+          "programomraade": {
+            "kode": "ELFLY2----",
+            "url-data": "https://data.udir.no/kl06/v201906/programomraader/ELFLY2----",
+            "tittel": {
+              "nb": "Flyfag",
+              "nn": "Flyfag",
+              "en": "Aeronautics"
+            },
+            "opplaeringssted": ["http://psi.udir.no/kl06/opplaeringssted_skole"]
+          },
+          "arbeidsoppgaver": "lede morgentrimmen"
+        }, {
+          "grep": {
+            "kode": "K3703",
+            "url-data": "https://data.udir.no/kl06/v201906/kompetansemaal/K3703",
+            "tittel": {
+              "nb": "bruke relevant måleutstyr",
+              "nn": "bruke relevant måleutstyr",
+              "en": "bruke relevant måleutstyr"
+            }
+          },
+          "programomraade": {
+            "kode": "ELFLY2----",
+            "url-data": "https://data.udir.no/kl06/v201906/programomraader/ELFLY2----",
+            "tittel": {
+              "nb": "Flyfag",
+              "nn": "Flyfag",
+              "en": "Aeronautics"
+            },
+            "opplaeringssted": ["http://psi.udir.no/kl06/opplaeringssted_skole"]
+          },
+          "arbeidsoppgaver": "lede morgentrimmen"
+        }, {
+          "grep": {
+            "kode": "K3703",
+            "url-data": "https://data.udir.no/kl06/v201906/kompetansemaal/K3703",
+            "tittel": {
+              "nb": "utføre fundamentering, oppbygging og komprimering i henhold til tegninger og beskrivelser",
+              "nn": "utføre fundamentering, oppbygging og komprimering i henhold til tegninger og beskrivelser",
+              "en": "utføre fundamentering, oppbygging og komprimering i henhold til tegninger og beskrivelser"
+            }
+          },
+          "programomraade": {
+            "kode": "ELFLY2----",
+            "url-data": "https://data.udir.no/kl06/v201906/programomraader/ELFLY2----",
+            "tittel": {
+              "nb": "Flyfag",
+              "nn": "Flyfag",
+              "en": "Aeronautics"
+            },
+            "opplaeringssted": ["http://psi.udir.no/kl06/opplaeringssted_skole"]
+          },
+          "arbeidsoppgaver": ""
+        }, {
+          "grep": {
+            "kode": "K3703",
+            "url-data": "https://data.udir.no/kl06/v201906/kompetansemaal/K3703",
+            "tittel": {
+              "nb": "gjøre rede for innholdet i relevant nasjonalt og internasjonalt regelverk som gjelder kundens rettigheter og plikter, herunder regler om klageadgang",
+              "nn": "gjøre rede for innholdet i relevant nasjonalt og internasjonalt regelverk som gjelder kundens rettigheter og plikter, herunder regler om klageadgang",
+              "en": "gjøre rede for innholdet i relevant nasjonalt og internasjonalt regelverk som gjelder kundens rettigheter og plikter, herunder regler om klageadgang"
+            }
+          },
+          "arbeidsoppgaver": "lede morgentrimmen"
+        }, {
+          "grep": {
+            "kode": "K3703",
+            "url-data": "https://data.udir.no/kl06/v201906/kompetansemaal/K3703",
+            "tittel": {
+              "nb": "mestre tre ulike typer masseflyttingsmaskiner",
+              "nn": "mestre tre ulike typer masseflyttingsmaskiner",
+              "en": "mestre tre ulike typer masseflyttingsmaskiner"
+            }
+          },
+          "arbeidsoppgaver": "lede morgentrimmen"
+        }]
+      }],
+      "year": "2020/2021"
+    },
+    "teacher": {
+      "username": "per2412",
+      "name": "Per Test",
+      "firstName": "Per",
+      "lastName": "Test",
+      "mobile": "45352515",
+      "mail": "per.test@vtfk.no"
+    },
+    "school": {
+      "id": "TESVS",
+      "name": "Testen videregående skole",
+      "shortName": "Testen vgs"
+    },
+    "isEncrypted": false,
+    "status": [
+      {
+        "status": "queued",
+        "timestamp": 1610975973808
+      }
+    ],
+    "isQueued": true
+  }
+}

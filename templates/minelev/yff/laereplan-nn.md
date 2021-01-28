@@ -8,15 +8,14 @@ address:
   city: {{ recipient.zipCode }} {{ recipient.zipPlace }}
 info:
   our-date: {{ isoDate created.timestamp }}
-  sector: {{ school.name }}
+  sector: {{ replace 'videregående skole' 'vidaregåande skule' school.name }}
   our-caseworker: {{ teacher.name }}
   paragraph: Offl. § 13 jf. fvl. §13 (1)
 ---
 
 # Elevens lokale læreplan i yrkesfagleg fordjuping (YFF)
 
-{{variable 'bekreftelse' content.bekreftelse}}
-{{variable 'bedrift' bekreftelse.bedriftsData}}
+{{variable 'skule' (replace 'videregående skole' 'vidaregåande skule' school.name) }}
 
 Yrkesfagleg fordjuping skal normalt nyttast til opplæring i kompetansemål som er henta frå nasjonale læreplanar for Vg3 for opplæring i bedrift og skule. Basert på desse nasjonale kompetansemåla skal ein utarbeide lokale læreplanar. Den lokale læreplanen skal tydeleg vise kva for nasjonale læreplanmål som ligg til grunn for opplæringa.
 
@@ -38,9 +37,23 @@ Yrkesfagleg fordjuping skal normalt nyttast til opplæring i kompetansemål som 
 
 Timetalet er gitt i einingar på 60 minutt. I skuletimar på 45 minutt vert dette 6 timar i veka på Vg1 (224 årstimar) og 9 timar i veka på Vg2 (337 årstimar).
 
-## Lokal læreplan for {{ student.name }} for skuleåret {{ content.year }}
+<h2 class="pdf-pagebreak-before"><br />
+  Lokal læreplan for {{ student.name }} for skuleåret {{ content.year }}
+</h2>
 
-{{ content.lokallaereplan }}
+{{#each content.utplasseringer}}
+  **{{name}}**
+
+{{#each maal}}
+
+- {{#if programomraade}}**Programområde:** {{uppercaseFirst programomraade.tittel.nn}}<br />{{/if}}
+  {{#if grep}}**Kompetansemål:** {{uppercaseFirst grep.tittel.nn}}<br />{{/if}}
+  {{#if arbeidsoppgaver}}**Arbeidsoppgåver:** {{uppercaseFirst arbeidsoppgaver}}<br />{{/if}}
+
+{{/each}}
+{{/each}}
+
+<br />
 
 Eleven sin lokale læreplan er godkjend av den som har fått dette ansvaret av rektor.
 
@@ -49,6 +62,6 @@ Eleven sin lokale læreplan er godkjend av den som har fått dette ansvaret av r
 Med venleg helsing
 
 {{ teacher.name }}<br />
-{{ school.name }}<br />
+{{ skule }}<br />
 
 *Dokumentet er elektronisk godkjent og vert sendt utan signatur.*
