@@ -25,9 +25,7 @@ info:
 
 {{#each content.kompetansemal}}
 
-- {{#if grep}}{{uppercaseFirst grep.tittel.nn}}<br />{{/if}}
-  {{#if arbeidsoppgaver}}**Arbeidsoppgåver:** {{uppercaseFirst arbeidsoppgaver}}<br />{{/if}}
-  {{#if tilbakemelding}}**Måloppnåing:** {{ replace 'Lav' 'Låg' (replace 'Høy' 'Høg' (replace 'måloppnåelse' 'måloppnåing' (uppercaseFirst tilbakemelding))) }}<br />{{/if}}
+- {{#if grep}}{{uppercaseFirst grep.tittel.nn}}<br />{{/if}}{{#if arbeidsoppgaver}}**Arbeidsoppgåver:** {{uppercaseFirst arbeidsoppgaver}}<br />{{/if}}{{#if tilbakemelding}}**Måloppnåing:** {{ replace 'Lav' 'Låg' (replace 'Høy' 'Høg' (replace 'måloppnåelse' 'måloppnåing' (uppercaseFirst tilbakemelding))) }}<br />{{/if}}
 
 {{/each}}
 

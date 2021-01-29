@@ -24,9 +24,7 @@ info:
 
 {{#each content.kompetansemal}}
 
-- {{#if grep}}{{uppercaseFirst grep.tittel.nb}}<br />{{/if}}
-  {{#if arbeidsoppgaver}}**Arbeidsoppgaver:** {{uppercaseFirst arbeidsoppgaver}}<br />{{/if}}
-  {{#if tilbakemelding}}**Måloppnåelse:** {{uppercaseFirst tilbakemelding}}<br />{{/if}}
+- {{#if grep}}{{uppercaseFirst grep.tittel.nb}}<br />{{/if}}{{#if arbeidsoppgaver}}**Arbeidsoppgaver:** {{uppercaseFirst arbeidsoppgaver}}<br />{{/if}}{{#if tilbakemelding}}**Måloppnåelse:** {{uppercaseFirst tilbakemelding}}<br />{{/if}}
 
 {{/each}}
 
