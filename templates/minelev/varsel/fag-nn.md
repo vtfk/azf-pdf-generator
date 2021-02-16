@@ -35,9 +35,9 @@ Varselet gjeld {{ lowercase content.period.nn }} skoleåret {{ content.year }}.
 Eleven skal møte opp og delta aktivt i opplæringa i henhold til forskrifta til opplæringslova § 3-3. 
 Viss ein elev har meir enn 10 prosent udokumentert fråvær i eit fag, vil eleven som hovudregel ikkje ha rett til å få halvårsvurdering med karakter eller standpunktkarakter i faget, og læraren kan heller ikkje sette slike karakterar. Eleven må legge fram relevant dokumentasjon for å få fråvær unnateke frå fråværsgrensa.
 
-**Regler om midlertidig unntak ved fråvær av helsegrunnar (korona) forlengjast ut skoleåret**
+**Reglar om mellombels unntak ved fråvær av helsegrunner (korona) blir forlengt ut skuleåret**
 <br/>
-Elever som har fravær av helsegrunner slipper å gå til fastlegen for å få dokumentert fraværet. Unntaket fra regelverket gjelder fra og med 24. august 2020 og ut skoleåret 2020 - 2021. Merk deg at fravær av helsegrunner omfatter alt helserelatert fravær. Dersom eleven legger frem bekreftelse fra en foresatt eller egenmelding, skal fravær av helsegrunner ikke føres som fravær på vitnemål og kompetansebevis, og det skal unntas fraværsgrensen.
+Elevar som har fråvær av helsegrunnar slepp å gå til fastlegen for å få dokumentert fråværet. Unntaket frå regelverket gjeld frå og med 24. august 2020 og ut skuleåret 2020 - 2021. Merk deg at fråvær av helsegrunnar omfattar alt helserelatert fråvær. Dersom eleven legg fram stadfesting frå ein føresett eller eigenmelding, skal fråvær av helsegrunner ikkje blir ført som fråvær på vitnemål og kompetansebevis, og det skal sjåast bort frå fråværsgrensa.
 {{/if}}
 
 {{#if (objectContains content.reasons "vurderingsgrunnlag")}}
