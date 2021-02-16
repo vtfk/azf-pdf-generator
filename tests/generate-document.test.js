@@ -2,7 +2,7 @@ const generateDocumentFunc = require('../GenerateDocument')
 const { writeFile } = require('fs').promises
 const { join } = require('path')
 
-const testDocumentsTypes = ['varsel-fag', 'yff-bekreftelse', 'yff-bekreftelse-bedrift', 'yff-laereplan', 'yff-tilbakemelding']
+const testDocumentsTypes = ['varsel-fag', 'varsel-orden', 'varsel-atferd', 'yff-bekreftelse', 'yff-bekreftelse-bedrift', 'yff-laereplan', 'yff-tilbakemelding']
 const context = { log: console.log, invocationId: 'testing' }
 
 describe('GenerateDocument function test', () => {
