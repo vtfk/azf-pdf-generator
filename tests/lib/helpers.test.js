@@ -198,10 +198,10 @@ describe('Test helper - join', () => {
 
 describe('Test helper - objectContains', () => {
   const obj = {
-    "id": 1,
-    "nb": "Du har manglende vurderingsgrunnlag",
-    "nn": "Du har manglande vurderingsgrunnlag",
-    "en": "You have a lack of assessments"
+    id: 1,
+    nb: 'Du har manglende vurderingsgrunnlag',
+    nn: 'Du har manglande vurderingsgrunnlag',
+    en: 'You have a lack of assessments'
   }
 
   it('returns false on no input', () => {
@@ -213,10 +213,10 @@ describe('Test helper - objectContains', () => {
   })
 
   it('returns true on valid input and text found', () => {
-    expect(objectContains(obj, "vurderingsgrunnlag")).toBe(true)
+    expect(objectContains(obj, 'vurderingsgrunnlag')).toBe(true)
   })
 
   it('returns false on valid input and text not found', () => {
-    expect(objectContains(obj, "heihei")).toBe(false)
+    expect(objectContains(obj, 'heihei')).toBe(false)
   })
 })
