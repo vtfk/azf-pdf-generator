@@ -1,4 +1,4 @@
-const { isoDate, prettyDate, lowercase, join, uppercase, variable, eq, ne, lt, gt, lte, gte, and, or, multiple, replace, capitalize, uppercaseFirst } = require('../../lib/helpers')
+const { isoDate, prettyDate, lowercase, join, uppercase, variable, eq, ne, lt, gt, lte, gte, and, or, multiple, replace, capitalize, uppercaseFirst, objectContains } = require('../../lib/helpers')
 
 describe('Test helper - logic', () => {
   const options = {}
@@ -193,5 +193,30 @@ describe('Test helper - join', () => {
 
   it('filters out empty values', () => {
     expect(join(['Ape', '', 'Banan', '', ''])).toBe('Ape og Banan')
+  })
+})
+
+describe('Test helper - objectContains', () => {
+  const obj = {
+    "id": 1,
+    "nb": "Du har manglende vurderingsgrunnlag",
+    "nn": "Du har manglande vurderingsgrunnlag",
+    "en": "You have a lack of assessments"
+  }
+
+  it('returns false on no input', () => {
+    expect(objectContains()).toBe(false)
+  })
+
+  it('returns true on empty input', () => {
+    expect(objectContains([])).toBe(true)
+  })
+
+  it('returns true on valid input and text found', () => {
+    expect(objectContains(obj, "vurderingsgrunnlag")).toBe(true)
+  })
+
+  it('returns false on valid input and text not found', () => {
+    expect(objectContains(obj, "heihei")).toBe(false)
   })
 })
