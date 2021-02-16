@@ -55,9 +55,9 @@
           "en": "You have a lack of assessments"
         }, {
           "id": 2,
-          "nb": "Du har fusket",
-          "nn": "Du har fusket",
-          "en": "You have cheated"
+          "nb": "Du har udokumentert fravær",
+          "nn": "Du har udokumentert fråvær",
+          "en": "You have undocumented attendence"
         }
     ]
     },

@@ -23,11 +23,13 @@ info:
 
 Varselet gjeld {{ lowercase content.period.nb }} skoleåret {{ content.year }}.
 
-Vi varslar deg nå, slik at du har moglegheit til å betre situasjonen.
+Informasjon om merknader som gjelder atferd finn de i SkoleArena.
+
+Det varslast skriftleg dersom det er tvil om eleven kan få karakteren nokså god eller lite god i halvårsvurdering med karakter eller standpunktkarakter i atferd. Dette kjem fram av forskrift til opplæringsloven § 3-8.
 
 ## Har du spørsmål?
 
-Dersom noko ved varselet er uklart, eller du ønskjer å snakke med nokon om grunnlaget for varselet ta kontakt med kontaktlæraren din så snart som mogleg.
+Viss noko ved varselet er uklårt eller du ønskjer å snakke med nokon om grunnlaget for varselet, ta kontakt med kontaktlæraren din så snart som mogleg.
 
 Dersom du er under 18 år vert dette brevet også sendt til føresette.
 
