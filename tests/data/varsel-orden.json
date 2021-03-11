@@ -1,7 +1,7 @@
 {
   "system": "minelev",
-  "template": "varsel/fag",
-  "language": "nn",
+  "template": "varsel/orden",
+  "language": "nb",
   "data": {
     "preview": true,
     "created": {
@@ -13,7 +13,7 @@
       "modifiedBy": "tes0101"
     }],
     "type": "varsel",
-    "variant": "fag",
+    "variant": "orden",
     "student": {
       "username": "bra2001",
       "name": "Brage Dahl",

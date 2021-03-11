@@ -23,11 +23,13 @@ info:
 
 Varselet gjelder {{ lowercase content.period.nb }} skoleåret {{ content.year }}.
 
-Vi varsler deg om situasjonen nå slik at du har mulighet til å forbedre deg.
+Informasjon om merknader som gjelder orden finnes i SkoleArena.
+
+Det skal varsles skriftlig dersom det er fare for at eleven kan få karakteren nokså god eller lite god i halvårsvurdering med karakter eller standpunktkarakter i orden. Dette framkommer av forskrift til opplæringsloven § 3-8.
 
 ## Har du spørsmål?
 
-Hvis noe ved varselet er uklart eller du ønsker å snakke med noen om grunnlaget for varselet, ta kontakt med kontaktlæreren din så snart som mulig.
+Ta kontakt med kontaktlæreren din så snart som mulig om noe ved varselet er uklart, eller du ønsker å snakke om grunnlaget for varselet.
 
 Hvis du er under 18 år sendes dette brevet også til foresatte.
 
