@@ -1,7 +1,7 @@
 {
   "system": "minelev",
-  "template": "varsel/fag",
-  "language": "nn",
+  "template": "varsel/atferd",
+  "language": "nb",
   "data": {
     "preview": true,
     "created": {
@@ -13,7 +13,7 @@
       "modifiedBy": "tes0101"
     }],
     "type": "varsel",
-    "variant": "fag",
+    "variant": "atferd",
     "student": {
       "username": "bra2001",
       "name": "Brage Dahl",
@@ -34,19 +34,6 @@
         "nn": "Halvårsvurdering 1. termin",
         "en": "1st term half-yearly assessment"
       },
-      "classes": [
-        {
-          "id": "TESVS:TEST/201NOR1208",
-          "nb": "Norsk hovedmål, skriftlig",
-          "nn": "Norsk hovudmål, skriftleg",
-          "en": "Norwegian as 1st lang, written"
-        }, {
-          "id": "TESVS:TEST/201NOR1209",
-          "nb": "Norsk hovedmål, muntlig",
-          "nn": "Norsk hovudmål, muntlig",
-          "en": "Norwegian as 1st lang, plural"
-        }
-      ],
       "reasons": [
         {
           "id": 1,
