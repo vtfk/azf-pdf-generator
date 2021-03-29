@@ -13,7 +13,7 @@ info:
   paragraph: Offl. § 13 jf. fvl. §13 (1)
 ---
 
-# Varsel om mogleg nedsett karakter i fag
+# Varsel om at det er tvil om du kan få karakter i fag
 
 ## Årsak til varsel:
 
