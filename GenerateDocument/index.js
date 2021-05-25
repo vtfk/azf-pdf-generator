@@ -6,6 +6,7 @@ const validateSchema = require('../lib/validate-schema')
 const getResponseObject = require('../lib/get-response-object')
 const getTemplate = require('../lib/get-template')
 const generateDocument = require('../lib/generate-document')
+const getPdfmakeOptions = require('../lib/get-pdfmake-options')
 
 module.exports = async function (context, req) {
   logConfig({ azure: { context }, prefix: 'generate-document' })
@@ -15,7 +16,8 @@ module.exports = async function (context, req) {
     const { data, ...payload } = validateSchema(req.body) // Throws error if schema isn't valid, and returns payload if valid
     const template = await getTemplate(payload)
     const document = generateDocument({ template, data })
-    const documentBuffer = await pdfmake(document)
+    const options = getPdfmakeOptions(payload)
+    const documentBuffer = await pdfmake(document, options)
 
     logger('info', ['returning document', 'size', prettyBytes(Buffer.byteLength(documentBuffer))])
     return getResponseObject({ ...payload, data, base64: documentBuffer.toString('base64') })

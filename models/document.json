@@ -27,6 +27,36 @@
         "en"
       ]
     },
+    "type": {
+      "type": "string",
+      "title": "Type",
+      "description": "PDF/A-typen. Når ikke angitt, opprettes standard PDF",
+      "examples": [
+        "1",
+        "2"
+      ],
+      "default": "",
+      "enum": [
+        "",
+        "1",
+        "2"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "title": "Version",
+      "description": "PDF/A-versjonen. Når ikke angitt, opprettes standard PDF",
+      "examples": [
+        "A",
+        "B"
+      ],
+      "default": "",
+      "enum": [
+        "",
+        "A",
+        "B"
+      ]
+    },
     "data": {
       "type": "object",
       "title": "Data object",

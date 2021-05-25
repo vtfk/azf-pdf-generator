@@ -15,7 +15,7 @@
   },
   "author": "",
   "dependencies": {
-    "@alheimsins/pdf-make": "1.0.10",
+    "@alheimsins/pdf-make": "2.0.1",
     "@vtfk/document-definitions": "1.0.3",
     "@vtfk/logger": "2.5.2",
     "ajv": "8.5.0",
