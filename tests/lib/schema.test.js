@@ -40,7 +40,7 @@ describe('Validate document schema', () => {
 
   it('fails on validation when wrong type is passed', () => {
     expect(getValidationInnerError({ system: 'sak', template: true }).summary)
-      .toEqual(['Property /template should be of type string'])
+      .toEqual(['Property undefined should be of type string'])
   })
 
   it('returns language \'nb\' and empty data object when it isn\'t passed', () => {
