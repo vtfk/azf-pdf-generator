@@ -12,7 +12,9 @@ const getValidationInnerError = (data, schema) => {
 
 const validSchema = {
   system: 'minelev',
-  template: 'varsel/fag'
+  template: 'varsel/fag',
+  type: '',
+  version: ''
 }
 
 describe('Validate document schema', () => {
@@ -40,10 +42,14 @@ describe('Validate document schema', () => {
 
   it('fails on validation when wrong type is passed', () => {
     expect(getValidationInnerError({ system: 'sak', template: true }).summary)
-      .toEqual(['Property /template should be of type string'])
+      .toEqual(['Property undefined should be of type string'])
   })
 
-  it('returns language \'nb\' and empty data object when it isn\'t passed', () => {
+  it('returns language \'nb\', empty data object, type \'\' and version \'\' when it isn\'t passed', () => {
     expect(validateSchema(validSchema)).toEqual({ ...validSchema, language: 'nb', data: {} })
+  })
+
+  it('returns language \'nb\', empty data object, type \'2\' and version \'B\' when it is passed', () => {
+    expect(validateSchema({ ...validSchema, type: '2', version: 'B' })).toEqual({ ...validSchema, language: 'nb', data: {}, type: '2', version: 'B' })
   })
 })

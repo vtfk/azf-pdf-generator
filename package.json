@@ -10,17 +10,18 @@
     "test:lint": "standard",
     "refresh": "rm -rf node_modules && rm package-lock.json && npm i",
     "deploy:test": "func azure functionapp publish test-func-pdf-api-v1",
-    "deploy:prod": "func azure functionapp publish prod-func-pdf-api-v1"
+    "deploy:prod": "func azure functionapp publish prod-func-pdf-api-v1",
+    "start": "func start"
   },
   "author": "",
   "dependencies": {
-    "@alheimsins/pdf-make": "1.0.10",
+    "@alheimsins/pdf-make": "2.0.1",
     "@vtfk/document-definitions": "1.0.3",
     "@vtfk/logger": "2.5.2",
-    "ajv": "7.2.4",
+    "ajv": "8.5.0",
     "handlebars": "4.7.7",
     "html-to-pdfmake": "2.1.7",
-    "jsdom": "16.5.3",
+    "jsdom": "16.6.0",
     "markdown-it": "12.0.6",
     "markdown-it-front-matter": "0.2.3",
     "pretty-bytes": "5.6.0",

@@ -4,11 +4,11 @@
 
 # azf-pdf-generator
 
-Mikrotjeneste som genererer PDF-dokumenter basert på predefinerte maler og returnerer de som base64.
+Mikrotjeneste som genererer PDF- eller PDF/A-dokumenter basert på predefinerte maler og returnerer de som base64.
 
 ## API-endepunkter
 
-### POST /generate
+### POST /generate - PDF
 
 Se [tilgjengelige systemer og maler](#maler) i listen nedenfor.
 
@@ -36,6 +36,52 @@ Respons:
     "system": "minelev",
     "template": "varsel-fag",
     "language": "nb",
+    "type": "",
+    "version": "",
+    "data": {
+      ... template fields ...
+    },
+    "base64": "...base64-pdf..."
+  }
+}
+```
+
+### POST /generate - PDF/A
+
+Se [tilgjengelige systemer og maler](#maler) i listen nedenfor.
+
+Feltet `language` er standard satt til `nb` (bokmål) om ikke annet er definert. <br>
+Andre tillatte verdier er `nn` (nynorsk) og `en` (engelsk)
+
+Feltet `type` og `version` gis med for å sette PDF/A til f.eks versjon `2B`. <br>
+Dersom `type` og/eller `version` ikke er satt genereres standard PDF. <br>
+Se [tillatte verdier](#pdfa) i listen under
+
+Forespørsel:
+
+```json
+{
+  "system": "minelev",
+  "template": "varsel-fag",
+  "language": "nb",
+  "type": "2",
+  "version": "B",
+  "data": {
+    ... template fields ...
+  }
+}
+```
+
+Respons:
+
+```json
+{
+  "data": {
+    "system": "minelev",
+    "template": "varsel-fag",
+    "language": "nb",
+    "type": "2",
+    "version": "B",
     "data": {
       ... template fields ...
     },
@@ -53,6 +99,16 @@ Et system kan ha mange maler, her er en beskrivelse av alle de forskjellige doku
 | minelev | varsel-fag | nb, nn     | `data` skal være dokumentet fra MinElev documents. <br>[Format tilgjengelig her.](https://github.com/vtfk/minelev-api/blob/main/docs/postDocument.md#fag) |
 | minelev | varsel-orden | nb, nn   | `data` skal være dokumentet fra MinElev documents. <br>[Format tilgjengelig her.](https://github.com/vtfk/minelev-api/blob/main/docs/postDocument.md#orden) |
 | minelev | varsel-atferd | nb, nn  | `data` skal være dokumentet fra MinElev documents. <br>[Format tilgjengelig her.](https://github.com/vtfk/minelev-api/blob/main/docs/postDocument.md#atferd) |
+
+## PDFA
+
+PDF/A finnes i flere versjoner. Type `2` med versjon `B` (ISO 19005-2) er den vanligste for arkivering
+
+| Type | Version | Standard | Description |
+|------|---------|----------|-------------|
+| 1    | A / B   | ISO 19005-1 | [Informasjon tilgjengelig her](https://en.wikipedia.org/wiki/PDF/A#pdf/a-1) |
+| 2    | A / B   | ISO 19005-2 | [Informasjon tilgjengelig her](https://en.wikipedia.org/wiki/PDF/A#pdf/a-2) |
+
 
 ## Utvikling
 
