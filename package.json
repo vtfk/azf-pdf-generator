@@ -10,7 +10,8 @@
     "test:lint": "standard",
     "refresh": "rm -rf node_modules && rm package-lock.json && npm i",
     "deploy:test": "func azure functionapp publish test-func-pdf-api-v1",
-    "deploy:prod": "func azure functionapp publish prod-func-pdf-api-v1"
+    "deploy:prod": "func azure functionapp publish prod-func-pdf-api-v1",
+    "start": "func start"
   },
   "author": "",
   "dependencies": {
