@@ -11,8 +11,7 @@ info:
 
 # IOP må sendes til {{ student.name }}
 
-Det er i dag produsert en individuell opplæringsplan (IOP) i Teams til {{ student.name }} i klasse {{ student.classId }} fra {{ teacher.name }}.
-Siden eleven enten har hemmelig adresse eller adressen ikke ble funnet i det sentrale folkeregisteret skal ikke IOP sendes digitalt gjennom SvarUT. IOP er arkivert i eleven sin elevmappe i 360.
+Det er i dag produsert en individuell opplæringsplan (IOP) i Teams til {{ student.name }} i klasse {{ student.classId }} fra {{ teacher.name }}. Siden eleven enten har hemmelig adresse eller adressen ikke ble funnet i det sentrale folkeregisteret skal ikke IOP sendes digitalt gjennom SvarUT. IOP er arkivert i eleven sin elevmappe i 360.
 
 Administrasjonen på {{ school.name }} må sørge for å skrive ut IOP fra 360 for å gi det videre til {{ teacher.name }}. Det er {{ teacher.name }} som nå er ansvarlig for å distribuere IOP videre til eleven. Er eleven under 18 år distribueres varselet etter de bestemmelsene som er gjort for eleven.
 
@@ -26,6 +25,6 @@ Takk for hjelpen!
 
 <br/>
 
-Med vennlig hilsen
+Med hemmelig hilsen
 
 Seksjon for sektorutvikling
