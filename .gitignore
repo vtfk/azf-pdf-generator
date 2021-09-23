@@ -45,3 +45,6 @@ __pycache__/
 .vscode/
 
 .DS_STORE
+
+# Ignore pdf files 
+tests/data/*.pdf
