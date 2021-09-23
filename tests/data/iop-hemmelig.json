@@ -1,0 +1,22 @@
+{
+	"system": "iop",
+	"template": "hemmelig",
+	"language": "nb",
+	"type": "2",
+	"version": "B",
+	"data": {
+		"created": {
+			"timestamp": 1711689485600
+		},
+		"student": {
+			"name": "Bjartmar Ingolf",
+			"classId": "Sakesak"
+		},
+		"teacher": {
+			"name": "Guddrund Gjerde"
+		},
+		"school": {
+			"name": "Hengsrud vinkjeller"
+		}
+	}
+}

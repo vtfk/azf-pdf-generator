@@ -2,7 +2,7 @@ const generateDocumentFunc = require('../GenerateDocument')
 const { writeFile } = require('fs').promises
 const { join } = require('path')
 
-const testDocumentsTypes = ['varsel-fag', 'varsel-orden', 'varsel-atferd', 'yff-bekreftelse', 'yff-bekreftelse-bedrift', 'yff-laereplan', 'yff-tilbakemelding']
+const testDocumentsTypes = ['iop-hemmelig', 'varsel-fag', 'varsel-orden', 'varsel-atferd', 'yff-bekreftelse', 'yff-bekreftelse-bedrift', 'yff-laereplan', 'yff-tilbakemelding']
 const context = { log: console.log, invocationId: 'testing' }
 
 describe('GenerateDocument function test', () => {
@@ -38,7 +38,7 @@ describe('GenerateDocument function test', () => {
       await expect(typeof base64).toBe('string')
 
       const buffer = Buffer.from(base64, 'base64')
-      await expect(buffer.byteLength).toBeGreaterThan(50000)
+      await expect(buffer.byteLength).toBeGreaterThan(30000)
 
       await writeFile(join(__dirname, `./data/${type}.pdf`), buffer)
     })
