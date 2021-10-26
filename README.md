@@ -99,6 +99,14 @@ Et system kan ha mange maler, her er en beskrivelse av alle de forskjellige doku
 | minelev | varsel-fag | nb, nn     | `data` skal være dokumentet fra MinElev documents. <br>[Format tilgjengelig her.](https://github.com/vtfk/minelev-api/blob/main/docs/postDocument.md#fag) |
 | minelev | varsel-orden | nb, nn   | `data` skal være dokumentet fra MinElev documents. <br>[Format tilgjengelig her.](https://github.com/vtfk/minelev-api/blob/main/docs/postDocument.md#orden) |
 | minelev | varsel-atferd | nb, nn  | `data` skal være dokumentet fra MinElev documents. <br>[Format tilgjengelig her.](https://github.com/vtfk/minelev-api/blob/main/docs/postDocument.md#atferd) |
+| minelev | samtale | nb, nn  | `data` skal være dokumentet fra MinElev documents. <br>[Format tilgjengelig her.](https://github.com/vtfk/minelev-api/blob/main/docs/postDocument.md#samtale-1) |
+| minelev | ikke-samtale | nb, nn  | `data` skal være dokumentet fra MinElev documents. <br>[Format tilgjengelig her.](https://github.com/vtfk/minelev-api/blob/main/docs/postDocument.md#ikke-samtale) |
+| minelev | notat | nb  | `data` skal være dokumentet fra MinElev documents. <br>[Format tilgjengelig her.](https://github.com/vtfk/minelev-api/blob/main/docs/postDocument.md#notat-1) |
+| minelev | bekreftelse-bedrift | nb, nn  | `data` skal være dokumentet fra MinElev documents. <br>[Format tilgjengelig her.](https://github.com/vtfk/minelev-api/blob/main/docs/postDocument.md#yff-bekreftelse-bedrift) |
+| minelev | bekreftelse | nb, nn  | `data` skal være dokumentet fra MinElev documents. <br>[Format tilgjengelig her.](https://github.com/vtfk/minelev-api/blob/main/docs/postDocument.md#yff-bekreftelse) |
+| minelev | laereplan | nb, nn  | `data` skal være dokumentet fra MinElev documents. <br>[Format tilgjengelig her.](https://github.com/vtfk/minelev-api/blob/main/docs/postDocument.md#yff-lokalplan-maal) |
+| minelev | tilbakemelding | nb, nn  | `data` skal være dokumentet fra MinElev documents. <br>[Format tilgjengelig her.](https://github.com/vtfk/minelev-api/blob/main/docs/postDocument.md#yff-tilbakemelding) |
+| iop | hemmelig | nb | [Format tilgjengelig her.](https://github.com/vtfk/azf-pdf-generator/blob/main/docs/templates.md#iop-hemmelig) |
 
 ## PDFA
 
