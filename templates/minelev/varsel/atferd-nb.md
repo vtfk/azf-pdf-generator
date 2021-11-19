@@ -23,7 +23,7 @@ info:
 
 Varselet gjelder {{ lowercase content.period.nb }} skoleåret {{ content.year }}.
 
-Informasjon om merknader som gjelder atferd finnes i SkoleArena.
+Informasjon om merknader som gjelder atferd finnes i Visma InSchool (VIS).
 
 Det skal varsles skriftlig dersom det er fare for at eleven kan få karakteren nokså god eller lite god i halvårsvurdering med karakter eller standpunktkarakter i orden. Dette framkommer av forskrift til opplæringsloven § 3-8.
 

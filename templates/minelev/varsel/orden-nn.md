@@ -23,7 +23,7 @@ info:
 
 Varselet gjeld {{ lowercase content.period.nb }} skoleåret {{ content.year }}.
 
-Informasjon om merknader som gjeld orden finn de i SkoleArena.
+Informasjon om merknader som gjeld orden finn de i Visma InSchool (VIS).
 
 Det varslast skriftleg dersom det er tvil om eleven kan få karakteren nokså god eller lite god i halvårsvurdering med karakter eller standpunktkarakter i orden. Dette kjem fram av forskrift til opplæringslova § 3-8.
 
