@@ -18,6 +18,6 @@ describe('Get template', () => {
 
   it('returns template', async () => {
     await expect(getTemplate({ system: 'minelev', template: 'varsel/fag' })).resolves
-      .toContain('---\ndefinition: brevmal\nlanguage: nb')
+      .toContain('definition: brevmal')
   })
 })

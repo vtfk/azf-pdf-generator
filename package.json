@@ -18,13 +18,17 @@
     "@alheimsins/pdf-make": "2.0.2",
     "@vtfk/document-definitions": "1.0.4",
     "@vtfk/logger": "3.0.1",
+    "@vtfk/pdf-generator": "^1.0.0",
+    "@vtfk/utilities": "^1.0.0",
     "ajv": "8.6.3",
     "handlebars": "4.7.7",
     "html-to-pdfmake": "2.3.6",
     "jsdom": "18.0.1",
+    "lodash.merge": "^4.6.2",
     "markdown-it": "12.2.0",
     "markdown-it-front-matter": "0.2.3",
     "pretty-bytes": "5.6.0",
+    "sjablong": "^1.0.28",
     "yaml-front-matter": "4.1.1"
   },
   "devDependencies": {
