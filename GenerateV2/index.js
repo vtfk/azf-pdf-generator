@@ -82,7 +82,7 @@ module.exports = async function (context, req) {
     // Validate the data against the schema
     if (!req.body.preview) Sjablong.validateData(schema, combinedMetadata)
     // Replace all placeholder values in the template
-    const replaced = Sjablong.replacePlaceholders(template, combinedMetadata, req.body.preview)
+    const replaced = Sjablong.replacePlaceholders(template, combinedMetadata, { preview: req.body.preview })
 
     // Convert the template to HTML
     const markdownContent = Sjablong.getHTMLandMetadataFromMarkdown(replaced)
