@@ -11,6 +11,9 @@
 		"meetingGroup": {
 			"name": "Hengsrud vinkjeller"
 		},
+		"caseResponsible": {
+			"name": "Dette skal være den ansvarlige"
+		},
 		"paragraph": "Offl. § 14",
 		"title": "Skal vi ha fest på lørran?",
 		"description": "Dersom vi skal ha fest på lørran må vi ha et sted å ha det",
