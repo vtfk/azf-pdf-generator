@@ -5,7 +5,7 @@ watermark: {{#if preview}} true {{else}} false {{/if}}
 info:
   sector: {{ meetingGroup.name }}
   our-date: {{ isoDate created.timestamp }}
-  our-caseworker: {{ teacher.name }}
+  our-caseworker: {{ caseResponsible.name }}
   paragraph: {{ paragraph }}
 ---
 
