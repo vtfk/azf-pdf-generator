@@ -64,8 +64,8 @@ Forespørsel:
   "system": "minelev",
   "template": "varsel-fag",
   "language": "nb",
-  "type": "2",
-  "version": "B",
+  "type": "B",
+  "version": "2",
   "data": {
     ... template fields ...
   }
@@ -80,8 +80,8 @@ Respons:
     "system": "minelev",
     "template": "varsel-fag",
     "language": "nb",
-    "type": "2",
-    "version": "B",
+    "type": "B",
+    "version": "2",
     "data": {
       ... template fields ...
     },
