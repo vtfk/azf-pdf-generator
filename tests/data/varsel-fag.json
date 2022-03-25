@@ -36,15 +36,14 @@
       },
       "classes": [
         {
-          "id": "TESVS:TEST/201NOR1208",
+          "id": "01234567",
+          "name": "TEST/201NOR1208",
           "nb": "Norsk hovedmål, skriftlig",
           "nn": "Norsk hovudmål, skriftleg",
           "en": "Norwegian as 1st lang, written"
         }, {
-          "id": "TESVS:TEST/201NOR1209",
-          "nb": "Norsk hovedmål, muntlig",
-          "nn": "Norsk hovudmål, muntlig",
-          "en": "Norwegian as 1st lang, plural"
+          "id": "76543210",
+          "name": "TEST/201NOR1209"
         }
       ],
       "reasons": [

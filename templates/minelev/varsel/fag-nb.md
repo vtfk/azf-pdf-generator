@@ -24,7 +24,7 @@ info:
 Dette omfatter følgende fag:
 
 {{#each content.classes}}
- - {{this.nb}}
+ - {{ classIdentifier this.nb this.name }}
 {{/each}}
 
 Varselet gjelder {{ lowercase content.period.nb }} skoleåret {{ content.year }}.

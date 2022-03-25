@@ -24,7 +24,7 @@ info:
 Dette omfattar følgjande fag:
 
 {{#each content.classes}}
- - {{this.nn}}
+ - {{ classIdentifier this.nn this.name }}
 {{/each}}
 
 Varselet gjeld {{ lowercase content.period.nn }} skoleåret {{ content.year }}.

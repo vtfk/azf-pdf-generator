@@ -1,4 +1,4 @@
-const { isoDate, prettyDate, lowercase, join, uppercase, variable, eq, ne, lt, gt, lte, gte, and, or, multiple, replace, capitalize, uppercaseFirst, objectContains } = require('../../lib/helpers')
+const { isoDate, prettyDate, lowercase, join, uppercase, variable, eq, ne, lt, gt, lte, gte, and, or, multiple, replace, capitalize, uppercaseFirst, objectContains, classIdentifier } = require('../../lib/helpers')
 
 describe('Test helper - logic', () => {
   const options = {}
@@ -218,5 +218,28 @@ describe('Test helper - objectContains', () => {
 
   it('returns false on valid input and text not found', () => {
     expect(objectContains(obj, 'heihei')).toBe(false)
+  })
+})
+
+describe('Test helper - classIdentifier', () => {
+  it('returns "nb" from class object when it exists', () => {
+    const obj = {
+      id: '01234567',
+      name: 'TEST/201NOR1208',
+      nb: 'Norsk hovedmål, skriftlig',
+      nn: 'Norsk hovudmål, skriftleg',
+      en: 'Norwegian as 1st lang, written'
+    }
+    const identifier = classIdentifier(obj.nb, obj.name)
+    expect(identifier).toBe(obj.nb)
+  })
+
+  it('returns "name" from class object when "nb" doesnt exist', () => {
+    const obj = {
+      id: '76543210',
+      name: 'TEST/201NOR1209'
+    }
+    const identifier = classIdentifier(obj.nb, obj.name)
+    expect(identifier).toBe(obj.name)
   })
 })
