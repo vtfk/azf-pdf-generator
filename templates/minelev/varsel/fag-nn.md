@@ -37,7 +37,7 @@ Viss ein elev har meir enn 10 prosent udokumentert fråvær i eit fag, vil eleve
 
 **Reglar om mellombels unntak ved fråvær av helsegrunner (korona) forlengjast ut skuleåret**
 <br/>
-Elevar som har fråvær av helsegrunnar slepp å gå til fastlegen for å få dokumentert fråværet. Unntaket frå regelverket gjeld frå og med 24. august 2020 og ut skuleåret 2020 - 2021. Merk deg at fråvær av helsegrunnar omfattar alt helserelatert fråvær. Dersom eleven legg fram stadfesting frå ein føresett eller eigenmelding, skal fråvær av helsegrunner ikkje blir ført som fråvær på vitnemål og kompetansebevis, og det skal sjåast bort frå fråværsgrensa.
+Elevar som har fråvær av helsegrunnar slepp å gå til fastlegen for å få dokumentert fråværet. Unntaket frå regelverket gjeld frå og med 24. august 2020 og ut skuleåret 2021 - 2022. Merk deg at fråvær av helsegrunnar omfattar alt helserelatert fråvær. Dersom eleven legg fram stadfesting frå ein føresett eller eigenmelding, skal fråvær av helsegrunner ikkje blir ført som fråvær på vitnemål og kompetansebevis, og det skal sjåast bort frå fråværsgrensa.
 {{/if}}
 
 {{#if (objectContains content.reasons "vurderingsgrunnlag")}}
