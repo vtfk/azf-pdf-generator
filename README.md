@@ -90,6 +90,18 @@ Respons:
 }
 ```
 
+### POST /generatev2
+Dette endepunktet er opprettet for å kunne sende mal inn sammen med requesten<br/>
+Endepunktet har også støtte for å bruke maler som ligger lagret på APIet.
+
+* Send inn template med requesten:<br>
+  Påkrevde properties: **template**
+* Bruk template som er lagret på APIet:<br>
+  Påkrevde properties: **system**, **templateId**
+
+Annet enn dette så fungerer endepunktet likt som **/generate**
+
+
 ## Maler
 
 Et system kan ha mange maler, her er en beskrivelse av alle de forskjellige dokumentmalene som er tilgjengelige for bruk i API-en.
