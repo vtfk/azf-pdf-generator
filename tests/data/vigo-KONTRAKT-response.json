@@ -1,0 +1,18 @@
+{
+	"system": "vigo",
+	"template": "KONTRAKT-response",
+	"language": "nb",
+	"type": "2",
+	"version": "B",
+	"data": {
+		"preview": true,
+		"created": {
+			"timestamp": 1711689485600
+		},
+		"studentName": "Gunnar Gunnarson",
+		"streetAddress": "Saurongata 44",
+		"zipCode": "1234",
+		"zipPlace": "Mordor",
+		"department": "Seksjon for fag- og yrkesopplæring"
+	}
+}
