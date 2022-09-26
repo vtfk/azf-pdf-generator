@@ -120,6 +120,7 @@ Et system kan ha mange maler, her er en beskrivelse av alle de forskjellige doku
 | minelev | tilbakemelding | nb, nn  | `data` skal være dokumentet fra MinElev documents. <br>[Format tilgjengelig her.](https://github.com/vtfk/minelev-api/blob/main/docs/postDocument.md#yff-tilbakemelding) |
 | iop | hemmelig | nb | [Format tilgjengelig her.](https://github.com/vtfk/azf-pdf-generator/blob/main/docs/templates.md#iop-hemmelig) |
 | smart | motereferat | nb, nn, en | [Format tilgjengelig her.](https://github.com/vtfk/azf-pdf-generator/blob/main/docs/templates.md#smart-motereferat) |
+| vigo | KONTRAKT-response | nb | [Format tilgjengelig her.](https://github.com/vtfk/azf-pdf-generator/blob/main/docs/templates.md#vigo-DOKUMENTTYPE-response) |
 
 ## PDFA
 

@@ -111,3 +111,50 @@ Example response:
   }
 }
 ```
+
+### `vigo-DOKUMENTTYPE-response`
+
+Example request:
+```json
+{
+	"system": "vigo",
+	"template": "KONTRAKT-respons",
+	"language": "nb",
+	"type": "2",
+	"version": "B",
+	"data": {
+		"created": {
+			"timestamp": 1711689485600
+    },
+    "studentName": "Bjarne Bjarnesen",
+    "streetAddress": "Nedre Bjarnevei 8",
+    "zipCode": "1234",
+    "zipPlace": "Bjarnestad",
+    "department": "Seksjon for Bjarne"
+	}
+}
+```
+
+Example response:
+```json
+{
+  "data": {
+    "system": "smart",
+    "template": "motereferat",
+    "language": "nb",
+    "type": "2",
+    "version": "B",
+    "data": {
+		"created": {
+			"timestamp": 1711689485600
+    },
+    "studentName": "Bjarne Bjarnesen",
+    "streetAddress": "Nedre Bjarnevei 8",
+    "zipCode": "1234",
+    "zipPlace": "Bjarnestad",
+    "department": "Seksjon for Bjarne"
+	},
+    "base64": "..."
+  }
+}
+```
