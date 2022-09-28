@@ -12,7 +12,7 @@ info:
   paragraph: Offl. § 13 jf. fvl. §13 (1)
 ---
 
-# Informasjonsbrev ved godkjent lærekontrakt
+# Informasjonsbrev ved godkjent kontrakt
 
 1. Informasjon om din kontrakt
 2. Informasjon om elev- og lærlingombudet
