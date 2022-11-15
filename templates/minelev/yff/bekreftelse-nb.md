@@ -24,7 +24,7 @@ Kopi sendt på e-post til {{ lowercase (join bekreftelse.kopiPrEpost 'og') }}.
 
 **Gi beskjed til skolen så raskt som mulig hvis opplysningene i brevet ikke stemmer.**
 
-Vi bekrefter med dette at {{ student.name }} som er elev på {{ content.level }} {{ content.utdanningsprogram.kortform.nb }} ved {{ school.name }} skal på utplassering hos {{ bedrift.navn }}{{#if bedrift.avdeling}} ({{ bedrift.avdeling }}){{/if}}.
+Vi bekrefter med dette at {{ student.name }} som er elev på {{ content.level }} ved {{ school.name }} skal på utplassering hos {{ bedrift.navn }}{{#if bedrift.avdeling}} ({{ bedrift.avdeling }}){{/if}}.
 
 ## Arbeidstid
 
