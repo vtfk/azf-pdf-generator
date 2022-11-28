@@ -7,6 +7,11 @@ info:
   sector: Seksjon for sektorutvikling
   our-date: {{ isoDate created.timestamp }}
   paragraph: Offl. § 13 jf. fvl. §13 (1)
+footer:
+  visiting-address: {{#if schoolFooter.address }}{{schoolFooter.address}}{{/if}}
+  phone: {{#if schoolFooter.phoneNumber }}{{schoolFooter.phoneNumber}}{{/if}}
+  email: {{#if schoolFooter.mail }}{{schoolFooter.mail}}{{/if}}
+  orgnr: {{#if schoolFooter.organizationNumber }}{{schoolFooter.organizationNumber}}{{/if}}
 ---
 
 # {{ capitalize variant }} må sendes til {{ student.name }}

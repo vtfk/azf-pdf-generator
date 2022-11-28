@@ -59,6 +59,12 @@
       "name": "Testen videregående skole",
       "shortName": "Testen vgs"
     },
+    "schoolFooter": {
+      "address": "Skolegata 13, Skulkebakken",
+      "phoneNumber": "12 34 56 78",
+      "mail": "skule.vgs@vtfk.no",
+      "organizationNumber": "12345678"
+    },
     "isEncrypted": false,
     "status": [
         {

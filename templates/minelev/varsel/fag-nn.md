@@ -11,6 +11,11 @@ info:
   sector: {{ school.name }}
   our-caseworker: {{ teacher.name }}
   paragraph: Offl. § 13 jf. fvl. §13 (1)
+footer:
+  visiting-address: {{#if schoolFooter.address }}{{schoolFooter.address}}{{/if}}
+  phone: {{#if schoolFooter.phoneNumber }}{{schoolFooter.phoneNumber}}{{/if}}
+  email: {{#if schoolFooter.mail }}{{schoolFooter.mail}}{{/if}}
+  orgnr: {{#if schoolFooter.organizationNumber }}{{schoolFooter.organizationNumber}}{{/if}}
 ---
 
 # Varsel om at det er tvil om du kan få karakter i fag

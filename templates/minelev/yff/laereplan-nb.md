@@ -11,6 +11,11 @@ info:
   sector: {{ school.name }}
   our-caseworker: {{ teacher.name }}
   paragraph: Offl. § 13 jf. fvl. §13 (1)
+footer:
+  visiting-address: {{#if schoolFooter.address }}{{schoolFooter.address}}{{/if}}
+  phone: {{#if schoolFooter.phoneNumber }}{{schoolFooter.phoneNumber}}{{/if}}
+  email: {{#if schoolFooter.mail }}{{schoolFooter.mail}}{{/if}}
+  orgnr: {{#if schoolFooter.organizationNumber }}{{schoolFooter.organizationNumber}}{{/if}}
 ---
 
 # Elevens lokale læreplan i yrkesfaglig fordypning (YFF)
