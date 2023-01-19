@@ -17,7 +17,7 @@ footer:
 # {{ capitalize variant }} må sendes til {{ student.name }}
 
 Det er i dag produsert en {{ variant }} i YFF til {{ student.name }} i klasse {{ student.classId }} fra {{ teacher.name }}.
-Eleven har hemmelig adresse eller har ikke tilgjengelig adresse i folkeregisteret, og har derfor ikke fått sitt brev i sin digitale postkasse.
+Eleven har enten hemmelig adresse, er registrert i unntakslisten til MinElev, eller har ikke tilgjengelig adresse i folkeregisteret, og har derfor ikke fått sitt brev i sin digitale postkasse.
 
 Administrasjonen på {{ school.name }} må sørge for å skrive ut brevet i yff-{{ variant }} fra 360 og deretter gi brevet til {{ teacher.name }}. Det er {{ teacher.name }} som da er ansvarlig for å distribuere brevet videre til eleven.
 
