@@ -7,7 +7,7 @@ address:
   street: {{ streetAddress }}
   city: {{ zipCode }} {{ zipPlace }}
 info:
-  our-date: {{ isoDate timestamp }}
+  our-date: {{ timestamp }}
   sector: {{ sender }}
   paragraph: Offl. § Husk å fylle inn! jf. fvl. §13 (1)
 ---

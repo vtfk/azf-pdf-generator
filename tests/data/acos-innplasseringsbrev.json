@@ -6,7 +6,7 @@
 	"version": "B",
 	"data": {
 		"preview": true,
-		"timestamp": 1711689485600,
+		"timestamp": "01.01.2024",
     "newUnit": "Hva som helst",
     "newCounty": "Vestfold fylkeskommune",
     "newManager": "Helt sjef",
@@ -16,6 +16,6 @@
 		"zipPlace": "Mordor",
 		"sender": "Prosjektleder / Fylkesdirektør",
     "newOfficeLocation": "Hjemmekontor",
-    "legalClaimDate": "01.01.2024"
+    "legalClaimDate": "07.01.2024"
 	}
 }
