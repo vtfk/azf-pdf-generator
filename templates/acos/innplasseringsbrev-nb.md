@@ -23,7 +23,7 @@ Som følge av fylkesdelingen er det gjennomført en kartleggingssamtale og innpl
 **Stillingstittel:** {{ newJobTitle }}<br>
 **Ny leder:** {{ newManager }}<br>
 **Hovedarbeidssted:** {{ newOfficeLocation }}<br>
-{{#if specialOfficeNeeds}}**Tilpasninger ved endret arbeidssted:** {{ specialOfficeNeedsDescription }} {{/if}}
+{{#if (eq specialOfficeNeeds "Ja")}}**Tilpasninger ved endret arbeidssted:** {{ specialOfficeNeedsDescription }} {{/if}}
 
 Det innebærer at du beholder nåværende vilkår knyttet til stillingsbenevnelse, stillingskode, stillingsstørrelse, kapitteltilhørighet, fast/midl tilsetting, lønnsansiennitet, tjenesteansiennitet og årslønn. Nevnte opplysninger overføres ny arbeidsgiver.  
 
