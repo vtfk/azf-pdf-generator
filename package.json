@@ -1,6 +1,6 @@
 {
   "name": "azf-pdf-generator",
-  "version": "1.10.2",
+  "version": "1.10.3",
   "description": "",
   "scripts": {
     "test": "npm run test:jest && npm run test:lint",
