@@ -10,12 +10,15 @@
     "newUnit": "Hva som helst",
     "newCounty": "Vestfold fylkeskommune",
     "newManager": "Helt sjef",
-		"employeeName": "Gunnar Gunnarson",
+		"employeeName": "Jørgen Gunnarson",
 		"streetAddress": "Saurongata 44",
 		"zipCode": "1234",
 		"zipPlace": "Mordor",
 		"sender": "Prosjektleder / Fylkesdirektør",
     "newOfficeLocation": "Hjemmekontor",
-    "legalClaimDate": "07.01.2024"
+    "newJobTitle": "Direktør",
+    "legalClaimDate": "07.01.2024",
+    "specialOfficeNeeds": false,
+    "specialOfficeNeedsDescription": "Pga mange vanskelige omstendigheter med både det ene og det andre, må Jørgen ha eget cellekontor med kaffetrakter og masasjestol."
 	}
 }
