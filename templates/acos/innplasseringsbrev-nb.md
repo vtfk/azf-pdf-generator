@@ -9,7 +9,7 @@ address:
 info:
   our-date: {{ timestamp }}
   sector: {{ sender }}
-  paragraph: Offl. § Husk å fylle inn! jf. fvl. §13 (1)
+  paragraph: Offl. § 25
 ---
 
 # Melding om innplassering i {{ newCounty }}
