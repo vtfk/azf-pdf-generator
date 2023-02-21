@@ -13,10 +13,9 @@ info:
 ---
 
 # Melding om innplassering i {{ newCounty }}
-Vestfold og Telemark fylkeskommune legges ned som virksomhet 31.12.2023. Vestfold fylkeskommune og Telemark fylkeskommune opprettes med virkning fra og med 01.01.2024.
+Vestfold og Telemark fylkeskommune avvikles 31.12.2023. Vestfold fylkeskommune og Telemark fylkeskommune opprettes med virkning fra og med 01.01.2024.
 
-Som følge av fylkesdelingen er det gjennomført en kartleggingssamtale og innplasseringssamtale. Vi vil orientere om at du er innplassert som følger i Vestfold fylkeskommune eller Telemark fylkeskommune fra og med 1. januar 2024:  
-
+Som følge av fylkesdelingen er det gjennomført en kartleggingssamtale og innplasseringssamtale. Du er fra 01.01.2024 innplassert i:  
 
 **Fylkeskommune:** {{ newCounty }}<br>
 **Seksjon:** {{ newSection }}<br>
@@ -24,7 +23,7 @@ Som følge av fylkesdelingen er det gjennomført en kartleggingssamtale og innpl
 **Leder:** {{ newManager }}<br>
 {{#if (eq specialOfficeNeeds "Ja")}}**Tilpasninger ved endret arbeidssted:** {{ specialOfficeNeedsDescription }} {{/if}}
 
-Det innebærer at du beholder nåværende vilkår knyttet til stillingsbenevnelse, stillingskode, stillingsstørrelse, kapitteltilhørighet, fast/midl tilsetting, lønnsansiennitet, tjenesteansiennitet og årslønn. Nevnte opplysninger overføres ny arbeidsgiver.  
+Ansatte har rett til å beholde lønn, opparbeidet tjenesteansiennitet og pensjonsrettigheter, som følger av arbeidsavtalen (styringsdokumentet pkt. 6.7.2)
 
 Du kan velge å reservere deg mot å bli med over i den nye fylkeskommunen. Det betyr imidlertid at du sier opp din stilling i fylkeskommunen. 
 
