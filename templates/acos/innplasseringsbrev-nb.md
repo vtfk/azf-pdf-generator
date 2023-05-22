@@ -19,7 +19,7 @@ Som følge av fylkesdelingen er det gjennomført en kartleggingssamtale og innpl
 
 **Fylkeskommune:** {{ newCounty }}<br>
 **Seksjon:** {{ newSection }}<br>
-**Stillingstittel:** {{ newJobTitle }}<br>
+**Stillingskode og stillingstittel (hovedstilling):** {{ newJobTitle }}<br>
 **Leder:** {{ newManager }}<br>
 {{#if (eq specialOfficeNeeds "Ja")}}**Tilpasninger ved endret arbeidssted:** {{ specialOfficeNeedsDescription }} {{/if}}
 
