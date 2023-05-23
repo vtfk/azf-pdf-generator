@@ -15,7 +15,7 @@ info:
 # Melding om innplassering i {{ newCounty }}
 Vestfold og Telemark fylkeskommune avvikles 31.12.2023. Vestfold fylkeskommune og Telemark fylkeskommune opprettes med virkning fra og med 01.01.2024.
 
-Som følge av fylkesdelingen er det gjennomført en kartleggingssamtale og innplasseringssamtale. Du er fra 01.01.2024 innplassert i:  
+Som følge av fylkesdelingen er det gjennomført kartleggingssamtale og innplasseringssamtale. Du er fra 01.01.2024 innplassert i:  
 
 **Fylkeskommune:** {{ newCounty }}<br>
 **Seksjon:** {{ newSection }}<br>
