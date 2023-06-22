@@ -13,7 +13,7 @@ info:
 
 Det er i dag produsert et varsel i MinElev til {{ student.name }} i klasse {{ student.classId }} fra {{ teacher.name }}.
 
-Siden eleven enten har hemmelig adresse eller er registrert i unntakslisten til MinElev, skal ikke varselet sendes digitalt gjennom SvarUT. Varselet er arkivert i eleven sin elevmappe i 360.
+Eleven har enten adressesperring, er registrert i unntakslisten til MinElev, eller har ikke tilgjengelig adresse i folkeregisteret, og har derfor ikke fått sitt brev i sin digitale postkasse. Varselet er arkivert i eleven sin elevmappe i 360.
 
 Administrasjonen på {{ school.name }} må sørge for å skrive ut varselet fra 360 for å gi det videre til {{ teacher.name }}. Det er {{ teacher.name }} som nå er ansvarlig for å distribuere varselet videre til eleven. Er eleven under 18 år distribueres varselet etter de bestemmelsene som er gjort for eleven.
 

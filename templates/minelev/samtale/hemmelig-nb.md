@@ -13,7 +13,7 @@ info:
 
 Det er i dag produsert et brev i MinElev til {{ student.name }} i klasse {{ student.classId }} fra {{ teacher.name }} fordi eleven har takket nei til elevsamtale.
 
-Eleven har enten hemmelig adresse eller er registrert i unntakslisten til MinElev, og har derfor ikke fått sitt brev i sin digitale postkasse.
+Eleven har enten adressesperring, er registrert i unntakslisten til MinElev, eller har ikke tilgjengelig adresse i folkeregisteret, og har derfor ikke fått sitt brev i sin digitale postkasse.
 
 Administrasjonen på {{ school.name }} må sørge for å skrive ut brevet som bekrefter at eleven har takket nei til elevsamtale fra 360. Brevet har tittel «Tilbud om elevsamtale» i 360. Deretter skal brevet gis til {{ teacher.name }}. Det er {{ teacher.name }} som da er ansvarlig for å distribuere brevet videre til eleven.
 
