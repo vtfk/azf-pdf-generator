@@ -17,7 +17,7 @@ Eleven har enten adressesperring, er registrert i unntakslisten til MinElev, ell
 
 Administrasjonen på {{ school.name }} må sørge for å skrive ut varselet fra 360 for å gi det videre til {{ teacher.name }}. Det er {{ teacher.name }} som nå er ansvarlig for å distribuere varselet videre til eleven. Er eleven under 18 år distribueres varselet etter de bestemmelsene som er gjort for eleven.
 
-Hvis eleven ikke er registrert med hemmelig adresse i 360, skal brukerstøtte arkiv informeres på telefon 35 91 70 13.
+Hvis eleven har adressesperring i folkeregisteret, men ikke er registrert med adressesperring i 360, skal brukerstøtte arkiv informeres på telefon 35 91 70 13.
 
 ## Har du spørsmål?
 

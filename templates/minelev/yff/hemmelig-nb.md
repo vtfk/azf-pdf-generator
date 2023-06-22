@@ -21,7 +21,7 @@ Eleven har enten adressesperring, er registrert i unntakslisten til MinElev, ell
 
 Administrasjonen på {{ school.name }} må sørge for å skrive ut brevet i yff-{{ variant }} fra 360 og deretter gi brevet til {{ teacher.name }}. Det er {{ teacher.name }} som da er ansvarlig for å distribuere brevet videre til eleven.
 
-Hvis eleven ikke er registrert med hemmelig adresse i 360, skal brukerstøtte arkiv informeres på telefon 35 91 70 13.
+Hvis eleven har adressesperring i folkeregisteret, men ikke er registrert med adressesperring i 360, skal brukerstøtte arkiv informeres på telefon 35 91 70 13.
 
 ## Har du spørsmål?
 

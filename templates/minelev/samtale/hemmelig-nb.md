@@ -17,7 +17,7 @@ Eleven har enten adressesperring, er registrert i unntakslisten til MinElev, ell
 
 Administrasjonen på {{ school.name }} må sørge for å skrive ut brevet som bekrefter at eleven har takket nei til elevsamtale fra 360. Brevet har tittel «Tilbud om elevsamtale» i 360. Deretter skal brevet gis til {{ teacher.name }}. Det er {{ teacher.name }} som da er ansvarlig for å distribuere brevet videre til eleven.
 
-Hvis eleven ikke er registrert med hemmelig adresse i 360, skal brukerstøtte arkiv informeres på telefon 35 91 70 13.
+Hvis eleven har adressesperring i folkeregisteret, men ikke er registrert med adressesperring i 360, skal brukerstøtte arkiv informeres på telefon 35 91 70 13.
 
 ## Har du spørsmål?
 
