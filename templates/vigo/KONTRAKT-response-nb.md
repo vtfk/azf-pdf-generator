@@ -14,34 +14,32 @@ info:
 
 # Informasjonsbrev ved godkjent kontrakt
 
-1. Informasjon om din kontrakt
+1. Informasjon om din kontrakt/avtale om vg3 fagopplæring i skole
 2. Informasjon om elev- og lærlingombudet
 
 ## 1. Informasjon om din kontrakt
 
-Gratulerer, Vestfold og Telemark fylkeskommune har nå godkjent din kontrakt. Du kan se og laste ned kontrakten ved å gå inn på [https://www.vigo.no/](https://www.vigo.no/).
+Gratulerer, Vestfold og Telemark fylkeskommune har nå godkjent din kontrakt/avtale om vg3 fagopplæring i skole. Du kan se og laste ned kontrakten ved å gå inn på [https://www.vigo.no/](https://www.vigo.no/), eller laste ned vigo appen.
 
-Bedriften du har tegnet kontrakt med, vil følge deg opp i det daglige. Dersom du har behov for å få informasjon eller snakke med noen andre enn bedriften din, kan du kontakte oss i fylkeskommunen. Vi har kontorer på Fylkeshuset i Tønsberg og Skien.
+Bedriften/opplæringskontoret eller skolen du har tegnet kontrakt/avtale om fagopplæring i skole med, vil følge deg opp i det daglige. Dersom du har behov for å få informasjon eller snakke med andre, kan du kontakte oss i fylkeskommunen. Vi har kontorer på Fylkeshuset i Tønsberg og Skien.
 
 Nedenfor er noen punkter vi mener det er viktig at du er kjent med:
-- Din lærebedrift skal ha utarbeidet en intern plan for opplæring. Denne planen skal du gjøre deg kjent med.
-- Kontrakten skal vise til den eller de arbeidsavtalene som du har. Alle med kontrakt skal ha en arbeidsavtale i tillegg til kontrakten.
-- Du har minst en gang i halvåret rett til en samtale med instruktøren om utviklingen din i forhold til kompetansemåla i faget. (Forskrift til opplæringslova §§ 3-7, 3-10 og 3-12)
-- Fravær fra opplæringen som samlet utgjør totalt 14 dager eller mer, skal din lærebedrift melde inn til fylkeskommunen på avklaringsskjema. Din læretid forlenges da tilsvarende fraværet.
-- Tilleggsvilkår som manglende teori og lignende framgår av kontrakten.
+- Din lærebedrift/opplæringskontor/skole skal ha utarbeidet en intern plan for opplæring. Denne planen skal du gjøre deg kjent med. 
+- Kontrakten skal vise til den eller de avtalene som du har. Alle med kontrakt skal ha en arbeidsavtale i tillegg til kontrakten. Har du avtale med en skole er dette ikke ett krav.
+- Du har minst en gang i halvåret rett til en samtale med instruktøren om utviklingen din i forhold til kompetansemåla i faget. (Forskrift til opplæringsloven §§ 3-7, 3-10 og 3-12)
+- Fravær fra opplæringen som samlet utgjør totalt 14 dager eller mer, skal bedrift/skole melde inn til fylkeskommunen på avklaringsskjema. Din læretid forlenges da tilsvarende fraværet.
+- Tilleggsvilkår som manglende teori og lignende framgår av kontrakten/avtalen om vg3 fagopplæring i skole.
 - Teorikravet for å gå opp til fag-/svenneprøve skal være bestått før læretidens utløp. For lærekandidater som skal opp til kompetanseprøve, er det ikke krav til bestått teori.
-- Fag-/svenneprøven/kompetanseprøven skal som hovedregel avlegges før utløpet av læretiden, men ikke tidligere enn 3 måneder før læretiden er over. Hvis det er behov for forlengelse av læretid uten tilskudd, må lærebedriften søke om det før læretiden er utløpt. (Forskrift til oppl.§3-46)
-- Hvis ikke forlengelse er søkt om eller innvilget og prøve ikke er avlagt, avsluttes kontrakten uten avlagt prøve 6 måneder etter utløpt læretid. Du må da gå opp som praksiskandidat ved å opparbeide deg nok praksis. Hvis ikke all opplæring i skole og bedrift er fullført og bestått, må du også ta Vg3 Tverrfaglig eksamen. Du må ordne prøvested og betale fag-/svenneprøven selv.
+- Fag-/svenneprøven/kompetanseprøven skal som hovedregel avlegges før utløpet av læretiden (tidligst 3 måneder før utløp). Hvis det er behov for forlengelse av læretid uten tilskudd, må lærebedriften søke om det før læretiden er utløpt. (Forskrift til oppl.§3-46)
+- Om forlengelse ikke er søkt om eller innvilget, og prøve ikke er avlagt, avsluttes kontrakten/avtalen om vg3 fagopplæring i skole uten avlagt prøve. Du må da gå opp som praksiskandidat ved å opparbeide deg nok praksis. Du må som hovedregel også ta vg3 Tverrfaglig eksamen. Du må ordne prøvested og betale fag-/svenneprøven selv.
 
 Læreforholdet er underlagt opplæringsloven med forskrift og lokal forskrift om inntak formidling i Vestfold og Telemark fylkeskommune. Disse finner du på [https://lovdata.no/](https://lovdata.no/)
-
-Du kan klage på avgjørelsen om inntak til videregående opplæring, jfr. Oppl. §15-2. Klagefristen er 3 uker fra du har mottatt dette brevet med informasjon om kontrakten, jfr. forvaltningslovens § 29.
 
 Hvis du skal søke lån eller stipend, finner du informasjon på [https://www.lanekassen.no/](https://www.lanekassen.no/)
 
 Kontakt oss gjerne. Vi er tilgjengelige på telefon mellom 09:00 og 14:00. Du kan også avtale å besøke oss i åpningstidene som er:
-- &nbsp;15. mai til 14. september: kl. 08:00-15:00
-- &nbsp;15. september til 14 mai: kl. 08:00-15:45
+- &nbsp;**15. mai til 14. september: kl. 08:00-15:00**
+- &nbsp;**15. september til 14 mai: kl. 08:00-15:45**
 
 Telefonnummeret til fylkeskommunen er 35917000
 <br/>Epost: [fagopplaring@vtfk.no](mailto:fagopplaring@vtfk.no)
