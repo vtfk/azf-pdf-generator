@@ -6,6 +6,9 @@
 
 Mikrotjeneste som genererer PDF- eller PDF/A-dokumenter basert på predefinerte maler og returnerer de som base64.
 
+## Dokuemtdefinisjoner
+Dokumentdefinisjoner (logo, skrifttype og sånt shait) finner du her: [./lib/document-definitions/README.md](./lib/document-definitions/README.md)
+
 ## API-endepunkter
 
 ### POST /generate - PDF

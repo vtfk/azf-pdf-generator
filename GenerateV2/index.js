@@ -3,7 +3,7 @@
 */
 const PDFGenerator = require('@vtfk/pdf-generator')
 const { decodeBase64 } = require('@vtfk/utilities')
-const getDocumentDefinition = require('@vtfk/document-definitions')
+const getDocumentDefinition = require('../lib/document-definitions/index')
 const { logConfig, logger } = require('@vtfk/logger')
 const HTTPError = require('../lib/http-error')
 const Sjablong = require('sjablong')
