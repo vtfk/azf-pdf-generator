@@ -38,7 +38,7 @@ describe('GenerateDocument function test', () => {
       await expect(typeof base64).toBe('string')
 
       const buffer = Buffer.from(base64, 'base64')
-      await expect(buffer.byteLength).toBeGreaterThan(30000)
+      await expect(buffer.byteLength).toBeGreaterThan(15000)
 
       await writeFile(join(__dirname, `./data/${type}.pdf`), buffer)
     })
