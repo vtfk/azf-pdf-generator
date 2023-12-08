@@ -9,7 +9,7 @@ address:
 info:
   our-date: {{ documentDate }}
   sector: {{ documentResponsible }}
-  paragraph: Offl. § 13
+  paragraph: Offl §13 jf. fvl §13 første ledd pkt. 1
 ---
 
 # Overføringsbrev {{ countyName }} (Her trengs det en tittel)
