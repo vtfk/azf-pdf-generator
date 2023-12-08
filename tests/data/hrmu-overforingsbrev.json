@@ -1,0 +1,18 @@
+{
+	"system": "hrmu",
+	"template": "overforingsbrev",
+	"language": "nb",
+	"type": "2",
+	"version": "B",
+	"data": {
+		"preview": true,
+		"timestamp": "01.01.2024",
+    "countyName": "Favorittfylket",
+		"employeeName": "Bjartmar Ribbe",
+		"streetAddress": "Saurongata 44",
+		"zipCode": "1234",
+		"zipPlace": "Mordor",
+		"documentResponsible": "Hvem eller hvilken sektor skal være ansvarlig?",
+		"sender": "Sjefen sjøl"
+	}
+}
