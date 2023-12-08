@@ -7,7 +7,7 @@ address:
   street: {{ streetAddress }}
   city: {{ zipCode }} {{ zipPlace }}
 info:
-  our-date: {{ timestamp }}
+  our-date: {{ isoDate created.timestamp }}
   sector: {{ documentResponsible }}
   paragraph: Offl. § 13
 ---
