@@ -16,7 +16,7 @@
   "author": "",
   "dependencies": {
     "@alheimsins/pdf-make": "2.0.2",
-    "@vtfk/logger": "4.1.2",
+    "@vtfk/logger": "4.3.2",
     "@vtfk/pdf-generator": "1.0.1",
     "@vtfk/utilities": "1.0.0",
     "ajv": "8.11.2",
